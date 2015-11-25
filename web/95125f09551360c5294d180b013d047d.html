@@ -1,0 +1,64 @@
+---
+layout: default
+title: Easter Eggs
+scripts:
+- /js/easter.js
+---
+
+<div class="page-header page-header-top">
+	<div class="container">
+		<h1>Easter Eggs</h1>
+	</div>
+</div>
+<div class="container">
+	<div class="well">
+		Nice job making it here! As you have probably guessed by now, this site is riddled with Easter Eggs! Collect as many as you can, and we'll give bonuses to people who collect the most eggs! Remember, you can attack this site, but you can't do it in a way that prevents others from having the same opportunity, like denial of service. Also, please don't reveal this page to people from other teams in any way (aka IRC). Good luck! The egg that you get from finding this page is <code>egg{gotta_catch_'em_all}</code>.
+	</div>
+	
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2 class="panel-title">Submit</h2>
+				</div>
+				<div class="panel-body">
+					<form class="form-horizontal" action="javascript:submit_egg();" onsubmit="submit_egg();return false;">
+						<fieldset>
+							<div id="egg_msg"></div>
+						</fieldset>
+						<fieldset class="container-fluid">
+							<div class="row">
+								<div class="col-sm-12 form-group">
+									<label class="col-sm-3 control-label" for="egg">Egg</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="text" required name="egg" id="egg" placeholder="Egg" autocomplete="off" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 form-group">
+									<label class="col-sm-3 control-label"></label>
+									<div class="col-sm-9">
+										<input type="submit" class="btn btn-primary" value="Submit!" />
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="page-header">
+		<h3>Collected Eggs</h3>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-9 col-md-6">
+				<ul id="collected_eggs" class="list-group">You haven't collected any eggs yet!</ul>
+			</div>
+		</div>
+	</div>
+</div>

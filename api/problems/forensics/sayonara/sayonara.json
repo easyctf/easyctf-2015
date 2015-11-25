@@ -1,0 +1,17 @@
+{
+	"pid":			"sayonara",
+	"title":		"sayonara",
+	"grader":		"forensics/sayonara/sayonara_grader.py",
+	"category":		"Forensics",
+	"description":	"<p>Found some interesting words of advice left by <code>sayonara-bye</code>... help me understand it!</p><p><a href='/static/problems/sayonara/sayonara.mp3' target='_blank'>sayonara.mp3</a> <small>MD5: 9f44501f0ac360c3255548c96b70aecb</small></p>",
+	"hint":			"<p>Why does that right channel sound strange?</p>",
+	"value":		325,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"1000words": 1,
+		"49-shades": 1,
+		"rip": 1
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"pid":			"rsi",
+	"title":		"Repetitive Strain Injury",
+	"grader":		"forensics/rsi/rsi_grader.py",
+	"category":		"Forensics",
+	"description":	"<p>Help! I started playing this game called osu! and it's really fun. Now I have RSI :( but you won't believe how much <a href='https://osu.ppy.sh/wiki/Performance_Points' target='_blank'>pp</a> I got for this play: <a href='/static/problems/rsi/ken_u_read_this' target='_blank'>amazing replay</a></p>",
+	"hint":			"<p>No, it's not <code>.osr</code>. Also, you can have some imaginary points if you tell me what mouse I'm using.</p>",
+	"value":		475,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"ispy": 1,
+		"tulip": 1,
+		"sayonara": 1
+	}
+}

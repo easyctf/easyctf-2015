@@ -1,0 +1,17 @@
+{
+	"pid":			"pixels",
+	"title":		"Pixels",
+	"grader":		"forensics/pixels/pixels_grader.py",
+	"category":		"Forensics",
+	"description":	"<p><a href=\"/static/problems/pixels/mystery1.png\" target=\"_blank\">mystery1</a> - <a href=\"/static/problems/pixels/mystery2.png\" target=\"_blank\">mystery2</a></p>",
+	"hint":			"Did you know you can do math on images?",
+	"value":		180,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"apple": 1,
+		"png": 1,
+		"lolteam": 1
+	}
+}

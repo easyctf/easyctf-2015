@@ -1,0 +1,71 @@
+		</div>
+		<div class="site-footer" style="background-color: #F9F9F9; min-height:20vh;">
+			<div class="container" style="padding: 2em;">
+				<div class="row">
+					<div class="col-md-4">
+						<h4>About</h4>
+						<p>This is a very secure site that offers a great premium service that allows you to view the flag.</p>
+					</div>
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-xs-4">
+								<h4>User</h4>
+								<ul>
+									<li><a href="/login">Login</a></li>
+									<li><a href="/register">Register</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-4">
+								<h4>Report</h4>
+								<ul>
+									<li><a href="javascript:void(0);" data-toggle="modal" data-target="#myModal">Report a Problem</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container" id="footer">
+				<div class="row">
+					<center><p>
+						&copy; 2015 Infinity Star Bank (The EasyCTF Team)
+					</p></center>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<form action="javascript:report_problem();">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Report a Problem</h4>
+						</div>
+						<div class="modal-body">
+							<p>Select which page you're having trouble with and an administrator will review it for you.</p>
+							<select id="page" name="page">
+								<option selected value="/index">Home</option>
+								<option value="/account">Account</option>
+								<option value="/login">Login</option>
+								<option value="/register">Register</option>
+							</select>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="submit" class="btn btn-primary">Report</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var report_problem = function() {
+				var el = document.createElement("a");
+				el.href = $("#page").val(); // to get full path
+				$.post("/api/report", { page: el.href }, function(result) {
+					$("#myModal").modal("hide");
+				});
+			}
+		</script>
+	</body>
+</html>

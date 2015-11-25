@@ -1,0 +1,16 @@
+{
+	"pid":			"php3",
+	"title":		"5c9549188a4a4ac1e9a700bb269757b4",
+	"grader":		"web/php3/php3_grader.py",
+	"category":		"Web",
+	"description":	"<p><a href='http://web.easyctf.com:10204' target='_blank'>This is a hell of a PHP nightmare.</a></p>",
+	"hint":			"<p>How can you get the server to email the password to you instead?</p>",
+	"value":		350,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1000,
+	"weightmap":	{
+		"easter": 1,
+		"php2": 1
+	}
+}

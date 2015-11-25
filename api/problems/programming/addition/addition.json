@@ -1,0 +1,14 @@
+{
+	"pid":			"addition",
+	"title":		"Sum It!",
+	"grader":		"programming/addition/addition_grader.py",
+	"category":		"Programming",
+	"description":	"<p>Use the programming interface to complete this task. You&#39;ll be given a list of numbers.</p> <p>Input: A list of numbers, separated by commas.<br />Output: The sum of the numbers.</p> <p>Read the input from a file called&nbsp;<code>addition.in</code>&nbsp;that&#39;s in the current working directory, and then write your output to a file called&nbsp;<code>addition.out</code>.</p>",
+	"hint":			"<p>If you need help, try looking at the Python Tutorial in the Learn section!</p>",
+	"value":		30,
+	"bonus_points":	[0, 0, 0],
+	"programming":	true,
+	"flag":			"easyctf{'twas_sum_EZ_programming,_am_I_rite?}",
+	"threshold":	0,
+	"weightmap":	{}
+}

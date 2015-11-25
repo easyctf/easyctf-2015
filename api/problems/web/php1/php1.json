@@ -1,0 +1,18 @@
+{
+	"pid":			"php1",
+	"title":		"Personal Home Page",
+	"grader":		"web/php1/php1_grader.py",
+	"category":		"Web",
+	"description":	"<p><a href='http://web.easyctf.com:10200' target='_blank'>I hate PHP.</a></p>",
+	"hint":			"<p>You might not have permission to read the file, but someone else does ;)</p>",
+	"value":		225,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"intro-js": 1,
+		"plot-twist": 1,
+		"wastebin-1": 1,
+		"fandoms": 1
+	}
+}

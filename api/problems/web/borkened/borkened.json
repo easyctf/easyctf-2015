@@ -1,0 +1,17 @@
+{
+	"pid":			"borkened",
+	"title":		"Borkened",
+	"grader":		"web/borkened/borkened_grader.py",
+	"category":		"Web",
+	"description":	"<p>There's a team that's breaking the rules and hiding flags on this site! Find the flag.</p>",
+	"hint":			"<p>Hint: the flag is on this site.</p>",
+	"value":		400,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"php1": 1,
+		"ssl1": 1,
+		"wastebin-2": 1
+	}
+}

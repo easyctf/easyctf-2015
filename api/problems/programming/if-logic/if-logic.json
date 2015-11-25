@@ -1,0 +1,19 @@
+{
+	"pid":			"if-logic",
+	"title":		"If Logic",
+	"grader":		"programming/if-logic/if-logic_grader.py",
+	"category":		"Programming",
+	"description":	"<p>Use the programming interface to complete this task. You&#39;ll be given a list of numbers.</p> <p>Input: A list of numbers, separated by commas.<br />Output: Print <code>hi</code> if the number is 0-50 (inclusive), <code>hey</code> if the number is 51-100 (inclusive), and <code>hello</code> if anything else. Each greeting should have a linebreak after it.</p> <p>Read the input from a file called&nbsp;<code>if-logic.in</code>&nbsp;that&#39;s in the current working directory, and then write your output to a file called&nbsp;<code>if-logic.out</code>.</p>",
+	"hint":			"<p>If you need help, try looking at the Python Tutorial in the Learn section!</p>",
+	"value":		30,
+	"bonus_points":	[0, 0, 0],
+	"programming":	true,
+	"flag":			"easyctf{is_it_hi_or_hey_or_something_else}",
+	"threshold":	3,
+	"weightmap":	{
+		"looking-for-letters": 1,
+		"piglatin1": 1,
+		"piglatin2": 1,
+		"string-change": 1
+	}
+}

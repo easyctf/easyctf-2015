@@ -1,0 +1,53 @@
+BASEDIR="/home/easyctf/easyctf"
+HTTPDIR="/srv/http/ctf"
+
+echo "Grabbing latest updates..."
+cd $BASEDIR
+git reset --hard
+git pull origin master
+
+echo "Transpiling Coffeescript"
+# USE THIS ONE TO MINIFY
+# coffeebar -s -m -o $BASEDIR/web/js $BASEDIR/web/coffee
+coffeebar -s -o $BASEDIR/web/js $BASEDIR/web/coffee
+
+echo "Compiling LESS"
+cd $BASEDIR/web
+# USE THIS ONE TO MINIFY
+# lessc -x less/easyctf.less css/easyctf.css
+lessc less/easyctf.less css/easyctf.css
+
+echo "Shutting down nginx"
+sudo service nginx stop
+
+echo "Copying nginx config file"
+sudo cp $BASEDIR/ctf.nginx /etc/nginx/sites-enabled/ctf
+
+echo "Removing old files"
+sudo rm -rf $HTTPDIR/*
+
+echo "Generating page with Jekyll"
+sudo jekyll build --source $BASEDIR/web
+
+echo "Copying files to server"
+mkdir -p $BASEDIR/problem_static
+sudo mkdir -p $HTTPDIR/static/problems
+sudo cp -r $BASEDIR/problem_static $HTTPDIR/static/problems
+# sudo cp -r $BASEDIR/web/_site/* $HTTPDIR
+
+echo "Enabling writing to static folder..."
+sudo chmod -R 755 $HTTPDIR
+sudo chmod -R 757 $HTTPDIR/static
+
+echo "Make sure everything is in UNIX format"
+sudo dos2unix -q $HTTPDIR/*.html
+
+echo "Loading all the problems..."
+cd $BASEDIR
+sudo python3 api/load_problems.py
+sudo chmod -R 755 $HTTPDIR/*
+
+echo "Restarting the server"
+sudo service nginx start
+
+chmod +x $BASEDIR/deplo*

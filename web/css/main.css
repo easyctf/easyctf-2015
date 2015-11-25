@@ -1,0 +1,114 @@
+/* @import url(//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css); */
+/* @import url(https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css); */
+/* @import url(/css/vendor/jquery-ui-1.10.0.custom.css); */
+
+
+/* @import url(//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css); */
+@import url(easyctf.css);
+@import url(/css/vendor/font-awesome.min.css);
+
+#main-footer {
+	margin-top: 60px;
+}
+
+#site-message > .alert {
+	border-radius: 0;
+	margin: 0;
+}
+
+.about-team-name {
+	margin-top: 8px;
+	text-align: center;
+	font-size: larger;
+	font-weight: 700;
+}
+
+.about-team-role {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+.about-team-photo {
+	text-align: center;
+}
+
+.navatar {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.NO_HOVER_UNDERLINE_DAMMIT:hover {
+	text-decoration: none;
+}
+
+.ui-autocomplete-category {
+	font-weight: bold;
+	padding: .2em .4em;
+	margin: .8em 0 .2em;
+	line-height: 1.5;
+}
+
+.navbar {
+	border-radius: 0;
+}
+
+/*
+*::selection {
+	background-color: #9CF;
+}
+*/
+
+a.easyctf2014-link:hover {
+	background-color: #1e2936 !important;
+}
+
+#main-brand {
+	padding-right: 5px;
+}
+
+#dropdown-ctf-selector {
+	padding-left: 5px;
+}
+
+#ctf-selector-menu {
+	left: auto;
+	right: 0;
+}
+
+#updates {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 768px) {
+	#ctf-selector-menu-list {
+		display: none;
+	}
+	#dropdown-ctf-selector {
+		display: none;
+	}
+	#ctf-selector-menu {
+		display: none;
+	}
+	#mobile-easyctf2014-link {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	#dropdown-ctf-selector {
+		display: block;
+	}
+	#mobile-easyctf2014-link {
+		display: none;
+	}
+}
+
+input[type=text].dial {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}

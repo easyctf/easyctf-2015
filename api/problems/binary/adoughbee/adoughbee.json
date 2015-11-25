@@ -1,0 +1,16 @@
+{
+	"pid":			"adoughbee",
+	"title":		"ADoughBee",
+	"grader":		"binary/adoughbee/adoughbee_grader.py",
+	"category":		"Binary Exploitation",
+	"description":	"<p>ADoughBee Incorporated has released their <a href='/static/problems/adoughbee/adoughbee.rar' target='_blank'>FlagEncrypt</a> software. But it seems that unless you unlock the software, you can't really do anything! I know that <code>evil@anomat.cf</code> has a working license, try to find their serial number!</p><p>The serial is 25 characters long, alphanumeric. When you submit the flag, don't include <code>easyctf{}</code>.</p>",
+	"hint":			"<p>How does the program check your serial?</p>",
+	"value":		500,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"owner": 1,
+		"elusive": 1
+	}
+}

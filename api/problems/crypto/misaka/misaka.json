@@ -1,0 +1,15 @@
+{
+	"pid":			"misaka",
+	"title":		"Misaka Mikoto",
+	"grader":		"crypto/misaka/misaka_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>My friends like anime way too much . . . they decided that to give me an encoded <a href='/static/problems/misaka/message.txt'>message</a>, but I can't solve it because I'm not a weeb!</p>",
+	"hint":			"railguns are cool",
+	"value":		50,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"caesar": 1
+	}
+}

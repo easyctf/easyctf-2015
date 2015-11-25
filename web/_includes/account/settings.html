@@ -1,0 +1,55 @@
+<div class="panel panel-default setting-panel" id="_settings">
+	<div class="panel-heading">
+		<h2 class="panel-title">Account Settings</h2>
+	</div>
+	<div class="panel-body">
+		<div id="update_user_msg"></div>
+		<form class="form-horizontal" action="javascript:update_info();" id="update_info_form" onsubmit="update_info();return false;">
+			<fieldset>
+				<legend>Profile</legend>
+				<p>
+					Leave the "New Password" field blank if you don't want to change your password.
+				</p>
+				<div class="container-fluid">
+					<div class="form-group">
+						<label for="account-name" class="control-label col-md-3">Email</label>
+						<div class="col-md-8">
+							<input type="email" class="form-control" id="-account-email" placeholder="Email" disabled />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="account-name" class="control-label col-md-3">Name</label>
+						<div class="col-md-8">
+							<input type="text" name="name" class="form-control" id="account-name" placeholder="Name" autocomplete="off" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="account-password" class="control-label col-md-3">New Password</label>
+						<div class="col-md-8">
+							<input type="password" name="password" class="form-control" id="account-password" placeholder="Leave this blank if you don't want to change password" autocomplete="off" />
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Confirm Changes</legend>
+				<p>
+					Type in your current password to make changes to your account.
+				</p>
+				<div class="container-fluid">
+					<div class="form-group">
+						<label for="account-confirm" class="control-label col-md-3">Current Password</label>
+						<div class="col-md-8">
+							<input type="password" name="confirm" class="form-control" id="account-confirm" placeholder="Confirm Password" autocomplete="off" />
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div class="form-actions">
+					<input type="submit" value="Update!" class="btn btn-primary" id="account-submit" />
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>

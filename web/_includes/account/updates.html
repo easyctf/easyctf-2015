@@ -1,0 +1,35 @@
+<div class="panel panel-default setting-panel" id="_updates">
+	<div class="panel-heading">
+		<h2 class="panel-title">Updates</h2>
+	</div>
+	<div class="panel-body">
+		<form class="form-horizontal" action="javascript:post_update();" onsubmit="post_update();return false;">
+			<fieldset>
+				<legend>Post Update</legend>
+				<div id="update_msg"></div>
+				<div class="form-group">
+					<label for="update-title" class="control-label col-md-2">Post Title</label>
+					<div class="col-md-6">
+						<input type="text" name="update-title" class="form-control" id="update-title" placeholder="Post Title" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="update-content" class="control-label col-md-2">Post Content</label>
+					<div class="col-md-6">
+						<!-- <input type="text" name="update-content" class="form-control" id="update-content" placeholder="Post Content" /> -->
+						<textarea id="update-content" name="update-content">
+							What's new?
+						</textarea>
+					</div>
+					<div class="col-md-2">
+						<input id="update-submit" type="submit" value="Post Update!" class="btn btn-info" />
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+<script type="text/javascript">
+	CKEDITOR.replace("update-content");
+</script>

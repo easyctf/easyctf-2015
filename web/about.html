@@ -1,0 +1,241 @@
+---
+layout: default
+title: About
+styles:
+- /css/sidebar.css
+scripts:
+- /vendor/js/smooth-scroll.min.js
+---
+
+<div class="page-header page-header-top page-header-success">
+	<div class="container">
+		<h1>About</h1>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 hidden-xs hidden-sm">
+			<nav class="col-xs-3 sidebar">
+				<ul id="sidebar" class="nav nav-stacked fixed">
+					<li> <a href="#_introduction" data-scroll>Introduction</a> </li>
+					<li> <a href="#_teamsize" data-scroll>Team Size</a> </li>
+					<li> <a href="#_difficulty" data-scroll>Difficulty</a> </li>
+					<li> <a href="#_resources" data-scroll>Resources</a> </li>
+					<li> <a href="#_new" data-scroll>What's New</a> </li>
+					<li> <a href="#_rules" data-scroll>Rules</a> </li>
+					<li> <a href="#_prepare" data-scroll>Preparation</a> </li>
+					<li> <a href="#_sample" data-scroll>Sample Problems</a> </li>
+					<li> <a href="#_team" data-scroll>Our Team</a> </li>
+					<li> <a href="#_contact" data-scroll>Contact Us</a> </li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-md-9">
+			<div class="panel panel-default" id="_introduction">
+				<div class="panel-heading">
+					<h2 class="panel-title">What?! Hacking?</h2>
+				</div>
+				<div class="panel-body">
+					<p>Yup. You heard that right. EasyCTF is a online hacking/cybersecurity contest targeted at middle and high school students. Like many similar CTF competitions, participants will have to crack, decompile, decrypt, etc. through many defenses in order to find a secret message, known as the "flag". The challenges presented are designed with the intent of being hacked, making it an excellent and <b>legal</b> way for students to get some great hands-on experience.</p>
+				</div>
+			</div>
+			
+			<div class="panel panel-default" id="_teamsize">
+				<div class="panel-heading">
+					<h2 class="panel-title">How many people per team?</h2>
+				</div>
+				<div class="panel-body">
+					<p>Teams will consist of up to 5 members. There's no point advantage to having less people on your team, but it's definitely to your advantage to have more people helping you, so invite your friends to play along!</p>
+				</div>
+			</div>
+			
+			<div class="panel panel-default" id="_difficulty">
+				<div class="panel-heading">
+					<h2 class="panel-title">Help, I don't know anything!</h2>
+				</div>
+				<div class="panel-body">
+					<p>That's ok! Like its name suggests, EasyCTF is an intro-level CTF contest, but can be enjoyable for new and veteran hackers alike! With the "programming" category, those without prior knowledge of computer science or programming can get some of the foundational skills required to solve some of the later challenges.</p>
+				</div>
+			</div>
+			
+			<div class="panel panel-default" id="_resources">
+				<div class="panel-heading">
+					<h2 class="panel-title">Wait, can't I just look this stuff up?</h2>
+				</div>
+				<div class="panel-body">
+					<p>Absolutely. In fact, we encourage you to use whatever resources you have, as long as it complies with our rules. CTF contests are created with the intention of allowing participants to look up information about topics they aren't familiar with. Our goal here is to open the door to cybersecurity and computer science for young and prospective hackers, and being able to find the information you want through searching the Internet is a great skill to have.</p>
+				</div>
+			</div>
+			
+			<div class="panel panel-default" id="_new">
+				<div class="panel-heading">
+					<h2 class="panel-title">Enough. I already know this. What's new?</h2>
+				</div>
+				<div class="panel-body">
+					<p>As some of you might know, this is our second year of EasyCTF. This year, we're improving our CTF to bring exciting, new challenges as well as easier integration into the classroom. Additionally, we're developing an interactive game. More information about this will be released later.</p>
+				</div>
+			</div>
+			
+			<div class="panel panel-default" id="_rules">
+				<div class="panel-heading">
+					<h2 class="panel-title">What are the rules?</h2>
+				</div>
+				<div class="panel-body">
+					<p>Check out our <a href="/rules">rules</a> page.</p>
+				</div>
+			</div>
+			
+			<div class="panel panel-default" id="_prepare">
+				<div class="panel-heading">
+					<h2 class="panel-title">How can I prepare?</h2>
+				</div>
+				<div class="panel-body">
+					<p>To get a feel for what you'll be doing during the actual competition, you could try some of the practice problems below, or try some of the problems from last year's <a href="http://2014.easyctf.com" target="_blank">EasyCTF</a>.</p>
+					<p>Finally, the <a href="http://trailofbits.github.io/ctf/" target="_blank">CTF Field Guide</a>, made by our sponsor <a href="http://trailofbits.com" target="_blank">Trail of Bits</a>, is an excellent resource for getting information about CTFs.</p>
+					<p>A more complete list of resources will be available on the <a href="/learn">Learn</a> page.</p>
+				</div>
+			</div>
+			
+			<h3 id="_sample">Sample Problems</h3>
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading0">
+						<h4 class="panel-title"><a class="NO_HOVER_UNDERLINE_DAMMIT" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">Crypto</a></h4>
+					</div>
+					<div id="collapse0" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading0">
+						<div class="panel-body problem_statement">
+							<div id="msg_1"></div>
+							<p></p>
+							<p>
+								Do you like crypto? We do. Try decrypting this: <code>lqef ef s fehzwa fgpflelglevt oezqak. dwsj ef tvm_jv_fejt_gz_sti_iv_lqa_kasw_oqswwatjaf</code>
+							</p>
+							<p>
+								<form onsubmit="handle_submit('1'); return false;" class="form-inline" id="form_1">
+									<input type="text" class="form-control" autocomplete="off" id="q1">
+									<input type="submit" class="btn btn-primary"> <a class="show_hint_btn btn btn-primary" href='javascript:show_hint("1");'>Show Hint</a>
+								</form>
+							</p>
+						</div>
+						<div style="display:none;" class="panel-footer" id="hint_1">Use online resources such as <a href="http://rumkin.com/tools/cipher" target="_blank">this</a> to help you :).</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="heading1">
+						<h4 class="panel-title"><a class="NO_HOVER_UNDERLINE_DAMMIT" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">Reversing</a></h4>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+						<div class="panel-body problem_statement">
+							<div id="msg_2"></div>
+							<p></p>
+							<p>
+								Do you like Python? We do. Try reversing this:
+							</p>
+							<pre>x = raw_input("enter the password: ");
+y = "";
+for c in x:
+	y += chr(ord(c) ^ 14);
+	if y == "ko}wmzhugQocQoQhbois":
+		print "congratz the flag is " + y;
+	else:
+		print "nope";</pre>
+							<p>
+								<form onsubmit="handle_submit('2'); return false;" class="form-inline" id="form_2">
+									<input type="text" class="form-control" autocomplete="off" id="q2">
+									<input type="submit" class="btn btn-primary"> <a class="show_hint_btn btn btn-primary" href='javascript:show_hint("2");'>Show Hint</a>
+								</form>
+							</p>
+						</div>
+						<div style="display:none;" class="panel-footer" id="hint_2">What does this <code>^</code> operator do?</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="panel panel-default" id="_team">
+				<div class="panel-heading">
+					<h2 class="panel-title">Our Team</h2>
+				</div>
+				<div class="panel-body">
+					<p>EasyCTF is a collaborative effort by a small team of student volunteers consisting of high school and college students.</p>
+					<div class="row equal" id="team_members"></div>
+				</div>
+			</div>
+			
+			<div class="panel panel-default" id="_contact">
+				<div class="panel-heading">
+					<h2 class="panel-title">Contact Us</h2>
+				</div>
+				<div class="panel-body">
+					<p>
+						If you have questions or comments, or just want to say hi, shoot us an email at <a href="mailto:team@easyctf.com">team@easyctf.com</a>.
+					</p>
+					<p>
+						<b>Disclaimer:</b> EasyCTF is not responsible for any frustration or broken valuables as a result of this CTF. Download responsibly! EasyCTF is not responsible for the security of online tools you download to complete these problems.
+					</p>
+					<small>
+						This site was last updated on <b id="last_built">{{ site.time }}</b>
+					</small>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	smoothScroll.init({
+		speed: 240,
+		easing: 'easeOutCubic',
+		updateURL: false
+	});
+	
+	$("body").scrollspy({
+		target: ".sidebar"
+	});
+	
+	$(document).ready(function() {
+		var html = "";
+		api_call("GET", "/api/our_team").done(function(result) {
+			if (result["success"] !== 1) return;
+			var team_members = result["team"];
+			for(var member in team_members) {
+				html += "<div class='col-xs-6 col-sm-4 col-md-3'>";
+				html += "<div class='panel'>";
+				html += "<div class='panel-body' style='overflow-x:visible;'>";
+				html += "<div style='text-align:center;'>";
+				html += "<p><img src='" + (team_members[member]["picture"]) + "' style='width:60%;border-radius:100%;' /></p>";
+				html += "<div><b>" + team_members[member]["name"] + "</b></div>";
+				html += "<div style='overflow:visible;height:75px;white-space:normal;' title='" + team_members[member]["what_i_do"] + "'>" + team_members[member]["what_i_do"] + "</div>";
+				html += "</div>";
+				html += "</div>";
+				html += "</div>";
+				html += "</div>";
+			}
+			$("#team_members").html(html);
+		});
+	});
+	
+	var flags = [
+		"",
+		"now_go_sign_up_and_do_the_real_challenges",
+		"i_am_a_flag"
+	];
+
+	window.show_hint = function(i) {
+		$("#hint_"+i).slideToggle();
+	}
+
+	window.handle_submit = function(i) {
+		var guess = $("#q" + i).val();
+		var html;
+		if (guess.toLowerCase().indexOf(flags[i].toLowerCase()) > -1) {
+			html = "<div class='alert alert-success'>Congratulations!</div>";
+		} else {
+			html = "<div class='alert alert-danger'>Nope, that's not right. If you want to know the answers, check the source code of this page!</div>";
+		}
+		$("#msg_" + i).hide().html(html).slideDown("normal");
+		setTimeout(function() {
+			$("#msg_"+i).slideUp("normal", function() {
+				$("#msg_"+i).html("").show();
+			});
+		}, 2000);
+	}
+</script>

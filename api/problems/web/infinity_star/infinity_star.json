@@ -1,0 +1,16 @@
+{
+	"pid":			"infinity_star",
+	"title":		"Infinity Star",
+	"grader":		"web/infinity_star/infinity_star_grader.py",
+	"category":		"Web",
+	"description":	"<p>Infinity Star Bank's <a href='http://web.easyctf.com:10206/' target='_blank'>new website</a> is up! In honor of their opening, they are offering a premium service that allows you to view flags.</p><p>Important note: the account <code>michael</code> is an admin account.</p>",
+	"hint":			"<p>If the transfer money feature is still under testing, who do you think can use it?</p>",
+	"value":		375,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"easter": 1,
+		"php2": 1
+	}
+}

@@ -1,0 +1,22 @@
+BASEDIR="/home/easyctf/easyctf"
+
+echo "Grabbing latest updates..."
+cd $BASEDIR
+git reset --hard > /dev/null
+git pull origin master -f > /dev/null
+
+echo "Starting API"
+sudo supervisorctl stop easyctf
+sudo pkill -9 gunicorn
+sudo service nginx stop
+# sudo cp $BASEDIR/ctf.supervisor /etc/supervisor/conf.d/easyctf.conf
+# sudo supervisorctl reread
+# sudo supervisorctl update
+# sudo supervisorctl start easyctf
+tmux kill-session -t ctfapi
+tmux new-session -s ctfapi -d "tmux set remain-on-exit on && cd $BASEDIR/api && sh gunicorn.sh"
+sudo service nginx start
+
+mongo easyctf --eval "db.cache.remove()"
+
+chmod +x deploy_api

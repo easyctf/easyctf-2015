@@ -1,0 +1,62 @@
+<div class="panel panel-default setting-panel" id="_team">
+	<div class="panel-heading">
+		<h2 class="panel-title">My Team</h2>
+	</div>
+	<div class="panel-body">
+		<fieldset>
+			<legend>Team Information <span id="saved_msg" style="display:none;">saved!</span></legend>
+			<form class="form-horizontal">
+				<p>
+					View your public profile <a id="public_profile_link">here</a>.
+				</p>
+				<p id="team-help">
+					To add people to your team, give them your join code and have them enter it into the appropriate box when they first register. This code can also add your team to your teacher's class list.
+				</p>
+				<div class="form-group">
+					<label for="team-name" class="control-label col-md-3">Team Name</label>
+					<div class="col-md-6">
+						<input type="text" name="team-name" id="team-name" class="form-control" placeholder="Team Name" onblur="javascript:update_team();" disabled />
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="team-school" class="control-label col-md-3">School</label>
+					<div class="col-md-6">
+						<input type="text" name="team-school" id="team-school" class="form-control" placeholder="School" onblur="javascript:update_team();" disabled />
+					</div>
+				</div>
+				<div class="form-group" id="join_code_row" style="display:none;">
+					<label for="team-join-code" class="control-label col-md-3">Join Code</label>
+					<div class="col-md-6">
+						<div><input type="password" name="team-join-code" id="team-join-code" class="form-control" placeholder="Join Code" readonly /></div>
+						<small>
+							<a href="javascript:void(0);" onclick="javascript:toggle_join_code();" class="NO_HOVER_UNDERLINE_DAMMIT"><i class="fa fa-eye"></i> Show/Hide Join Code</a> |
+							<a href="javascript:void(0);" onclick="javascript:generate_join_code();" class="NO_HOVER_UNDERLINE_DAMMIT"><i class="fa fa-refresh"></i> Generate New Code</a>
+						</small>
+					</div>
+				</div>
+			</form>
+		</fieldset>
+		<fieldset>
+			<legend>Team Members</legend>
+			<div class="form-group">
+				<div class="col-md-8">
+					<ul class="list-group" id="team-members"></ul>
+				</div>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Danger Zone</legend>
+			<p>Type the name of your team to confirm your withdrawal.</p>
+			<form id="leave_form" action="javascript:void(0);" class="form-horizontal" onsubmit="return false;">
+				<div class="form-group">
+					<div class="col-md-6">
+						<input type="text" name="leave_confirm" id="leave_confirm" class="form-control" />
+					</div>
+					<div class="col-md-2">
+						<input type="submit" class="btn btn-danger" id="leave_team" value="Leave Team" />
+					</div>
+				</div>
+			</form>
+		</fieldset>
+	</div>
+</div>

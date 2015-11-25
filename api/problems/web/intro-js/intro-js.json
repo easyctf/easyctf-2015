@@ -1,0 +1,13 @@
+{
+	"pid":			"intro-js",
+	"title":		"2147483648% Secure",
+	"grader":		"web/intro-js/intro-js_grader.py",
+	"category":		"Web",
+	"description":	"<p>Hack my friend's <a href='/static/problems/intro-js/index.html' target='_blank'>website</a>! From what she tells me, it's super secure. Why don't we prove her wrong :)</p>",
+	"hint":			"<p>Don't try to figure out what the messy JavaScript code means. <a href='https://www.google.com/search?q=developer+tools' target='_blank'>Developer tools</a> help a lot in things like this.</p>",
+	"value":		35,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{}
+}

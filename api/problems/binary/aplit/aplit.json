@@ -1,0 +1,16 @@
+{
+	"pid":			"aplit",
+	"title":		"Much Studying",
+	"grader":		"binary/aplit/aplit_grader.py",
+	"category":		"Binary Exploitation",
+	"description":	"<p>I suck at AP Lit (what is engwrish). I was able to steal the grader for the AP Lit test from the CollageBored, but it's not helping me do any better. Can you help me?</p><p>Source can be found <a href='/static/problems/aplit/aplit.c' target='_blank'>here</a>, and the binary with the actual flag is on the shell server at <code>/problems/aplit</code>.",
+	"hint":			"<p>Oh poop! Forgot to give you my prompt. Here it is: <span style='font-family:Times,serif;'>Choose a novel that you hate, and then write an essay about it.</span></p>",
+	"value":		400,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"owner": 1,
+		"elusive": 1
+	}
+}

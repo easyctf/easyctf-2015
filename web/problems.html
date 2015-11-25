@@ -1,0 +1,96 @@
+---
+layout: default
+indexing: false
+title: Problems
+scripts:
+- /js/problems.js
+---
+
+<script type="text/template" id="template_problem_list">
+	<div class="problem-list panel-group">
+		<% _.each(problems, function(problem) { %>
+			<%= render_problem({
+				problem: problem,
+				cardinal: cardinal
+			}) %>
+		<% }); %>
+	</div>
+</script>
+
+<script type="text/template" id="template_problem">
+	<div class="panel panel-default">
+		<div class="panel-heading" role"tab" id="heading<%- problem.pid %>">
+			<h4 class="panel-title">
+				<a class="NO_HOVER_UNDERLINE_DAMMIT" style="display:block;" data-toggle="collapse" data-parent="#accordion" href="#collapse<%- problem.pid %>" aria-expanded="true" aria-controls="collapse<%- problem.pid %>">
+					<b><%- problem.title %></b> <%- problem.value %> points
+					<span style="float:right;">
+						<% if (problem.solved && problem.bonus_place != 1) { %>
+							<div class="badge"><%- cardinal[problem.bonus_place] %> solve</div>&nbsp;
+						<% } %>
+						<%- problem.category %> - 
+						<% if (problem.solved == true) { %>
+							<span class="solved">Solved</span>
+						<% } else { %>
+							<span class="unsolved">Unsolved</span>
+						<% } %>
+					</span>
+				</a>
+			</h4>
+		</div>
+		<div id="collapse<%- problem.pid %>" class="panel-collapse collapse <% if (!problem.solved) { %> in<% } %>" role="tabpanel" aria-labelledby="heading<%- problem.pid %>">
+			<div class="panel-body problem_statement">
+				<div id="msg_<%- problem.pid %>"></div>
+				<div>
+					<div>Solved by <%- problem.successes %> <% if (problem.successes == 1) { %>team<% } else { %>teams<% } %>.</div>
+					<% if (problem.bonus_points[0] + problem.bonus_points[1] + problem.bonus_points[2] > 0) { %>
+						<div class="label <% if (problem.successes > 0) { %>label-default<% } else { %>label-primary<% } %>">1st Place: <%- Math.round(problem.bonus_points[0] * 100) %>%</div>
+						<div class="label <% if (problem.successes > 1) { %>label-default<% } else { %>label-success<% } %>">2nd Place: <%- Math.round(problem.bonus_points[1] * 100) %>%</div>
+						<div class="label <% if (problem.successes > 2) { %>label-default<% } else { %>label-warning<% } %>">3rd Place: <%- Math.round(problem.bonus_points[2] * 100) %>%</div>
+					<% } %>
+				</div>
+				<p><%= problem.description %></p>
+				<form onsubmit="handle_submit('<%- problem.pid %>'); return false;" class="form-inline" id="form_<%- problem.pid %>">
+					<input type="text" class="form-control" autocomplete="off" id="<%- problem.pid %>" />
+					<input type="submit" class="btn btn-primary" value="Submit!" />
+					<a class="show_hint_btn btn btn-primary" href="javascript:show_hint('<%- problem.pid %>');">Show Hint</a>
+				</form>
+			</div>
+			<div style="display:none;" class="panel-footer" id="hint_<%- problem.pid %>">
+				<p><%= problem.hint %></p>
+			</div>
+		</div>
+	</div>
+</script>
+
+<div class="page-header page-header-top page-header-danger">
+	<div class="container">
+		<h1>Problems</h1>
+	</div>
+</div>
+<div class="container">
+	<div id="rules" style="display:none;" class="jumbotron">
+		<center>
+			<h1>Welcome to EasyCTF!</h1>
+			<p>
+				A couple of things to remember before you begin:
+			</p>
+		</center>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<ul>
+					<li>The contest will end on <b>November 10</b> at <b>8pm EST</b>.</li>
+					<li>A survey problem will be available on the last day. Make sure you get it for free points!</li>
+					<li>If you have any questions, head over to <a href="/chat" target="_blank">heichat</a>, our chat server.</li>
+				</ul>
+			</div>
+		</div>
+		<center>
+			<h3>By continuing, you have read and will follow the <a href="/rules" target="_blank">rules</a>.</h3>
+			<p><small>This message will not appear again.</small></p>
+			<p><a href="javascript:void(0);" onclick="$('#rules').slideUp('fast');" class="btn btn-lg btn-primary">Let's Go!</a></p>
+		</center>
+	</div>
+	<div id="problems_count"></div>
+	<div id="problems_msg"></div>
+	<div id="problems_container"></div>
+</div>

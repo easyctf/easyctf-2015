@@ -1,0 +1,15 @@
+{
+	"pid":			"sleeping",
+	"title":		"I <3 SLEEPING",
+	"grader":		"crypto/sleeping/sleeping_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>We received this string, but I have no idea what it means! <code>3845281945283805284526053525260547380516453748164748478317454508</code></p>",
+	"hint":			"<p>ARGH I CAN'T SLEEP PEOPLE KEEP STEALING MY ZZZZs . . . NO MORE ZZZs /cries</p><p>P.S. You're overthinking it.</p><p>P.P.S. Blocks of 2</p><p>Final hint: sqrt(ABCDEFGHIJKLMNOPQRSTUVWXY). Where'd my Z's go?</p>",
+	"value":		125,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"misaka": 1
+	}
+}

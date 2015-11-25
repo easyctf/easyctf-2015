@@ -1,0 +1,13 @@
+{
+	"pid":			"plot-twist",
+	"title":		"Plot Twist",
+	"grader":		"web/plot-twist/plot-twist_grader.py",
+	"category":		"Web",
+	"description":	"<p>We need to get the flag at <a href='/static/problems/plot-twist/index.html' target='_blank'>this</a> site. That shouldn't be too hard.</p>",
+	"hint":			"<p>There must be a backup on that site SOMEWHERE . . . you just have to look harder</p>",
+	"value":		20,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{}
+}

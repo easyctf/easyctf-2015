@@ -1,0 +1,14 @@
+{
+	"pid":			"wastebin-1",
+	"title":		"Wastebin 1",
+	"grader":		"web/wastebin-1/wastebin-1_grader.py",
+	"category":		"Web",
+	"description":	"<p>I created a paste-sharing site the other day. Since client-side is faster, I decided to retrieve the entire database and store it client-side. No one should be able to see it, right? Prove me wrong by finding the admin password. <a href='/static/problems/wastebin-1/index.html' target='_blank'>page</a></p>",
+	"hint":			"<p>What's wrong with storing things on the client's browser?</p>",
+	"value":		90,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"pid":			"cave-johnson",
+	"title":		"Cave Johnson",
+	"grader":		"crypto/cave-johnson/cave-johnson_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>Welcome to <a href='/static/problems/cave-johnson/cave-johnson.txt' target='_blank'>Small Hole Sciences</a>.</p><p>(Since all of their budget was spent on moon rocks, they were only able to afford an old-fashioned Vigenere Cipher.)</p>",
+	"hint":			"<a href='https://en.wikipedia.org/wiki/Vigenere_cipher'>Information</a> from a reputable source",
+	"value":		450,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"hash1": 1,
+		"allzob": 1
+	}
+}

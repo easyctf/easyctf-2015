@@ -1,0 +1,15 @@
+{
+	"pid":			"hardwood",
+	"title":		"Hardwood Floors",
+	"grader":		"crypto/hardwood/hardwood_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>Our intelligence tells us that <a href=\"/static/problems/hardwood/hardwood.py\" target=\"_blank\">this</a> function was used to encrypt a message. They also managed to capture a spy while in the field. Unfortunately, our interrogators only managed to find the <a href=\"/static/problems/hardwood/floors.txt\" target=\"_blank\">ciphertext</a> of a message on his phone. Can you help us recover the secret message?</p>",
+	"hint":			"The correct flag is the one you think is correct",
+	"value":		200,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"caesar": 1
+	}
+}

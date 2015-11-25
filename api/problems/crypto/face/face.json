@@ -1,0 +1,15 @@
+{
+	"pid":			"face",
+	"title":		"Yve's Fave Pic",
+	"grader":		"crypto/face/face_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>@chaosagent doesn't like people seeing pictures of his face. So naturally, here's a <a href=\"/static/problems/face/smile.jpg\" target=\"_blank\">picture</a> of his face. Have fun :)</p>",
+	"hint":			"Note: This is a VERY rare occurence. @chaosagent NEVER smiles. Make note of it. Oh, wait, you wanted a hint? Fine. You need some programming to solve this efficiently.",
+	"value":		275,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"xor": 1
+	}
+}

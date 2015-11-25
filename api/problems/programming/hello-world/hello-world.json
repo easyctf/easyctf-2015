@@ -1,0 +1,14 @@
+{
+	"pid":			"hello-world",
+	"title":		"Hello World!",
+	"grader":		"programming/hello-world/hello-world_grader.py",
+	"category":		"Programming",
+	"description":	"<p>Use the programming interface to complete this task. Print the line <code>Hello, EasyCTF!</code> to a file called <code>hello-world.out</code>. For this problem and for future problems,&nbsp;<strong>make sure your program ends with a newline</strong>. Good luck!</p>",
+	"hint":			"<p>If you're really stuck, contact one of the mods on the <a href='/chat' target='_blank'>chat</a>, or check out our <a href='https://www.youtube.com/watch?v=GP1ZfzRSclQ' target='_blank'>video tutorial</a>!</p>",
+	"value":		20,
+	"bonus_points":	[0, 0, 0],
+	"programming":	true,
+	"flag":			"easyctf{welc0me_two_easyCtf}",
+	"threshold":	0,
+	"weightmap":	{}
+}

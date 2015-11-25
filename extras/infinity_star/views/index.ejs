@@ -1,0 +1,48 @@
+<% include _includes/header.ejs %>
+
+<div class="container">
+	<% if (page.logged_in) { %>
+		<div class="jumbotron">
+			<center>
+				<h1>Welcome, <%= page.user_info.username %>.</h1>
+				<p>Head over to <a href="/account">the Account page</a> to make transfers.</p>
+			</center>
+		</div>
+		<div class="jumbotron">
+			<center>
+				<h2 style="color:#F00;">LIMITED TIME SALE</h2>
+				<h1 style="color:#AA4;">Premium Infinity</h1>
+				<p>For just $99.99 ($0.01 tax), you can get our <b style="color:#CC3;">Premium Infinity</b> service, allowing you to view the <b>flag</b>.</p>
+				<p></p>
+				<% if ("purchased" in page.user_info && page.user_info.purchased) { %>
+					<p>Thanks for purchasing Premium Infinity by Infinity Star Bank. Here's your flag: <code>easyctf{csrf_protection_would_probably_have_been_a_good_idea_:/}</code></p>
+				<% } else { %>
+					<div id="premium_msg"></div>
+					<p><a href="javascript:buy_premium();" class="btn btn-lg btn-primary">Buy Now</a></p>
+				<% } %>
+			</center>
+		</div>
+		<script type="text/javascript">
+			var buy_premium = function() {
+				var disable = ".btn-lg";
+				$(disable).attr("disabled", "disabled");
+				$.post("/api/bank/premium", { }, function(result) {
+					display_message("#premium_msg", (result.success == 1 ? "success" : "danger"), result.message, function() {
+						if (result.success == 1) { location.reload(true); }
+						else { $(disable).removeAttr("disabled"); }
+					});
+				});
+			};
+		</script>
+	<% } else { %>
+		<div class="page-header">
+			<center><h1>Infinity Star Bank</h1></center>
+		</div>
+		<center>
+			<p>The only bank service that sucks at security.</p>
+		</center>
+		<% include _includes/registerform %>
+	<% } %>
+</div>
+
+<% include _includes/footer.ejs %>

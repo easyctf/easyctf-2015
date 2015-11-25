@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Wastebin Login - EasyCTF 2015</title>
+	</head>
+	<body>
+		<h1>Wastebin</h1>
+		<p>wastebin is the best paste tool on the internet guyz!!!11!1 we will keep all ur info safe</p>
+		<p>num of users registered: <span id="users_registered"></span></p>
+		<form action="javascript:check_login();">
+			<div><input type="text" id="username" placeholder="Username" /></div>
+			<div><input type="password" id="password" placeholder="Password" /></div>
+			<div><input type="submit" value="Login!" /></div>
+		</form>
+		<script type="text/javascript">
+			var users = [
+				{ username: "admin", password: "easyctf{cr4zy_p4ssw0rds}" },
+				{ username: "tom", password: "easyctf{9et_r3kt}" },
+				{ username: "becky", password: "easyctf{w0w_so_s3cure}" }
+			];
+			document.getElementById("users_registered").innerHTML = users.length;
+			window.check_login = function() {
+				var username = document.getElementById("username").value;
+				var password = document.getElementById("password").value;
+				for(var user in users) {
+					if (users[user].username == username && users[user].password == password) {
+						alert("Access granted!");
+						return;
+					}
+				}
+				alert("Dang it, you screwed up.");
+			}
+		</script>
+	</body>
+</html>

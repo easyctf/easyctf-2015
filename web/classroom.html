@@ -1,0 +1,137 @@
+---
+layout: default
+indexing: false
+title: Classroom
+scripts:
+- /js/classroom.js
+- //www.google.com/jsapi
+---
+
+<script type="text/template" id="template_class_list">
+	<ul class="nav nav-tabs" role="tablist" id="group_tabs">
+		<% _.each(groups, function(group) { %>
+			<li role="presentation"<% if (group.active) { %> class="active"<% } %>>
+				<a href="#group_<%= group.gid %>" aria-controls="group_<%= group.gid %>" role="tab" data-toggle="tab">
+					<%- group.name %>
+				</a>
+			</li>
+		<% }); %>
+	</ul>
+	<div class="tab-content">
+		<% _.each(groups, function(group) { %>
+			<div role="tabpanel" class="tab-pane<% if (group.active) { %> active<% } %>" id="group_<%= group.gid %>">
+				<div id="msg_<%= group.gid %>"></div>
+				<h3>Add Team</h3>
+				<form class="form-horizontal" action="javascript:add_team('<%= group.gid %>', '#jc_<%= group.gid %>');" class="add_team_form">
+					<p>To add a team to <b><%- group.name %></b>, please enter their join code.</p>
+					<div class="form-group">
+						<label for='join_code' class='control-label col-md-2'>Join Code</label>
+						<div class='col-md-6'>
+							<input type='text' name='join_code' id='jc_<%= group.gid %>' class='form-control' placeholder='Join Code' autocomplete='off' />
+						</div>
+						<div class='col-md-2'>
+							<input type='submit' value='Add team!' class='btn btn-info' />
+						</div>
+					</div>
+				</form>
+				<h3>Manage Teams</h3>
+				<div class="row">
+					<div class="col-md-8">
+						<div class="panel-group" role="tablist" aria-multiselectable="true">
+							<% _.each(group.members, function(team) { %>
+								<%= render_team({
+									team: team,
+									gid: group.gid
+								}) %>
+							<% }); %>
+						</div>
+					</div>
+				</div>
+				<h3>Danger Zone</h3>
+				<p><a href="javascript:remove_group('<%= group.gid %>');" class="btn btn-danger">Delete this Class</a></p>
+			</div>
+		<% }); %>
+	</div>
+</script>
+
+<script type="text/template" id="template_team">
+	<div class="panel panel-default" id="grouppanel<%- gid %><%- team.tid %>">
+		<div class="panel-heading" role"tab" id="heading<%- gid %><%- team.tid %>">
+			<h4 class="panel-title">
+				<span style="float:right">
+					<a href='javascript:remove_team("<%- gid %>", "<%- team.tid %>");' class="badge">REMOVE</a>
+				</span>
+				<a class="NO_HOVER_UNDERLINE_DAMMIT" style="display:block;" data-toggle="collapse" data-parent="#accordion" href="#collapse<%- gid %><%- team.tid %>" aria-expanded="true" aria-controls="collapse<%- gid %><%- team.tid %>" onclick="javascript:load_graph('<%- gid %>', '<%- team.tid %>');">
+					<%- team.teamname %> - <%- Math.round(team.score * 10) / 10 %> points (Click to open)
+				</a> 
+		</div>
+		<div id="collapse<%- gid %><%- team.tid %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<%- gid %><%- team.tid %>">
+			<div class="panel-body">
+				<div class="col-md-8">
+					<div id="graph<%- gid %><%- team.tid %>">Loading graph...</div>
+				</div>
+				<div class="col-md-4">
+					<h3>Team Members</h3>
+					<ul>
+						<% _.each(team.members, function(user) { %>
+							<li><%= user.name %></li>
+						<% }) %>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<div class="page-header page-header-top page-header-danger">
+	<div class="container">
+		<h1>Classroom</h1>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9">
+			<p>Classes are a great way for teachers to integrate EasyCTF into their classroom. By adding a team to a class, you are able to track not only the team's progress, but also the problems solved by individual members of the team. If you need help using this feature, contact a moderator on the IRC.</p>
+		</div>
+		<div class="col-sm-3">
+			<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#create_group_modal"><i class="fa fa-plus"></i> Add Class</button>
+		</div>
+	</div>
+	<div class="page-header">
+		<h3>My Classes</h3>
+	</div>
+	<div id="class_container">
+		You currently have no classes. Click the <span class="label label-success"><i class="fa fa-plus"></i> Add Class</span> above to add a new class!
+	</div>
+</div>
+
+<div class="modal fade" id="create_group_modal" tabindex="-1" role="dialog" aria-labelledby="create_group_modal_label">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="create_group_modal_label">Create a Class</h4>
+			</div>
+			<form action="javascript:create_group();" id="create_group_form" class="form-horizontal">
+				<div class="modal-body">
+					<fieldset>
+						<div id="create_group_msg"></div>
+						<p>What do you want to call your class?</p>
+						<div class="container-fluid">
+							<div class="form-group">
+								<label for="group_name" class="control-label col-md-3">Name</label>
+								<div class="col-md-8">
+									<input type="text" name="group_name" class="form-control" id="group_name" placeholder="Enter a name here..." autocomplete="off" />
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Create Class</button>
+				</div>
+			 </form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,14 @@
+{
+	"pid":			"fandoms",
+	"title":		"Teach Me How to Write Like This",
+	"grader":		"web/fandoms/fandoms_grader.py",
+	"category":		"Web",
+	"description":	"<p>My friend Michelle found this cool new site, but you have to pay to read and she doesn't have money. Can you help her read the <a href='/static/problems/fandoms/index.html' target='_blank'>fics</a> anyways?</p>",
+	"hint":			"<p>Where can you find out what files are in a server?</p>",
+	"value":		30,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{
+	}
+} 

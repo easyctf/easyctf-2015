@@ -1,0 +1,19 @@
+{
+	"pid":			"looking-for-letters",
+	"title":		"Looking for Letters",
+	"grader":		"programming/looking-for-letters/looking-for-letters_grader.py",
+	"category":		"Programming",
+	"description":	"<p>Use the programming interface to complete this task. </p> <p>Input: A string containing alphanumeric characters.<br />Output: A string containing only the letters of the input.</p> <p>Read the input from a file called&nbsp;<code>looking-for-letters.in</code>&nbsp;that&#39;s in the current working directory, and then write your output to a file called&nbsp;<code>looking-for-letters.out</code>.</p>",
+	"hint":			"<p>If you need help, try looking at the Python Tutorial in the Learn section!</p>",
+	"value":		65,
+	"bonus_points":	[0, 0, 0],
+	"programming":	true,
+	"flag":			"easyctf{filtering_the_#s_out}",
+	"threshold":	2,
+	"weightmap":	{
+		"addition": 1,
+		"can-you-even": 1,
+		"math-class": 1,
+		"easyctf-day": 1
+	}
+}

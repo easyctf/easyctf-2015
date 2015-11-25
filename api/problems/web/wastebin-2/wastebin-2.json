@@ -1,0 +1,18 @@
+{
+	"pid":			"wastebin-2",
+	"title":		"Wastebin 2",
+	"grader":		"web/wastebin-2/wastebin-2_grader.py",
+	"category":		"Web",
+	"description":	"<p>So after the previous fiasco, I decided to generate a random <code>admin</code> password, and hide it in a file that no one will ever find. And don't try Googling it either, cuz Google can't find it either! Hahaha >:) <a href='http://web.easyctf.com:10207/2/index.php' target='_blank'>Link</a></p>",
+	"hint":			"<p>Where can you find out what files are in a server?</p>",
+	"value":		250,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"intro-js": 1,
+		"plot-twist": 1,
+		"wastebin-1": 1,
+		"fandoms": 1
+	}
+}

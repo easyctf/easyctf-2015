@@ -1,0 +1,16 @@
+{
+	"pid":			"breached",
+	"title":		"Hijacked!",
+	"grader":		"linux/breached/breached_grader.py",
+	"category":		"Linux",
+	"description":	"<p>Someone planted a file on our computer (the <a href='/shell' target='_blank'>shell server</a>), but we don't know what it is! The only clue that we have is that it's owned by a user called <code>l33t_haxx0r</code>. Can you figure out the flag?</p>",
+	"hint":			"<p>Try to look up useful Linux commands.</p>",
+	"value":		100,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"owner": 1,
+		"elusive": 1
+	}
+}

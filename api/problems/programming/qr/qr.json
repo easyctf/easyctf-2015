@@ -1,0 +1,18 @@
+{
+	"pid":			"qr",
+	"title":		"Coordinates",
+	"grader":		"programming/qr/qr_grader.py",
+	"category":		"Programming",
+	"description":	"<p>We found this <a href=\"/static/problems/qr/qr.txt\" target=\"_blank\">text</a> lying around, but apparently it doesn't do anything. Want to give it a shot?</p>",
+	"hint":			"<p>Do you like painting?</p>",
+	"value":		150,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"looking-for-letters": 1,
+		"piglatin1": 1,
+		"piglatin2": 1,
+		"string-change": 1
+	}
+}

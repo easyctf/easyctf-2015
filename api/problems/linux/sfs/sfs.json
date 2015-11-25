@@ -1,0 +1,13 @@
+{
+	"pid":			"sfs",
+	"title":		"San Francisco Symphony",
+	"grader":		"linux/sfs/sfs_grader.py",
+	"category":		"Linux",
+	"description":	"<p>Who knew musicians could program? They put a flag inside <code>/problems/sfs/sfs</code>! But when I run the program, it's not printing out the flag. Find the flag!</p>",
+	"hint":			"<p>Darn. That <code>c</code> file isn't going to help much either. How can we find the flag using only the binary?</p>",
+	"value":		75,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{}
+}

@@ -1,0 +1,15 @@
+{
+	"pid":			"allzob",
+	"title":		"All Zob's Fault",
+	"grader":		"crypto/allzob/allzob_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>Apparently our crypto program didn't store the correct phi-value or something for this <a href='/static/problems/allzob/all_zobs_fault.txt' target='_blank'>message</a>; it spits out gibberish when we try to decrypt it. Either the memory had a rare fault or Zob's being an idiot again. Please help.</p>",
+	"hint":			"<p>Zob works at the Russian Space Agency</p>",
+	"value":		350,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"xor": 1
+	}
+}

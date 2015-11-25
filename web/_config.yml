@@ -1,0 +1,10 @@
+title: EasyCTF 2015
+description: EasyCTF is a national, online, high school hacking competition run by students. EasyCTF aims to open the door to computer science and cybersecurity for students all around the country.
+destination: /srv/http/ctf
+font: Karla
+exclude: ["coffee", "node_modules"]
+
+keep_files: static/scoreboard.json
+
+markdown: kramdown
+permalink: none

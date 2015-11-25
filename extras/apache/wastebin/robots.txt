@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /2/password_Tj9WBkFpORmHYaYBG5GR7VZzgDaEM2e2aWeeCRtJ.txt

@@ -1,0 +1,134 @@
+---
+layout: default
+styles:
+- /css/vendor/bootstrap-select.min.css
+scripts:
+- /js/register.js
+- /js/updates.js
+- /vendor/js/bootstrap-select.min.js
+- /vendor/js/knob.js
+- /vendor/js/timeago.js
+- /vendor/js/smooth-scroll.min.js
+- //www.google.com/recaptcha/api.js
+---
+
+<div class="page-header page-header-top" style="min-height:40vh;position:relative;background-image:url(/images/banner.png);background-position:center;background-size:cover;background-repeat:no-repeat;">
+	<center style="margin-top:120px;margin-bottom:60px;">
+		<div id="title">
+			<h1 style="font-size:6.5em;"><span style="color:#7B1FA2;">Easy</span><span style="color:#4CAF50;">CTF 2015</span></h1>
+			<h2 style="font-size:2.0em;">High School Hacking Competition</h2>
+			<h3 style="font-size:1.5em;"><a href="http://www.timeanddate.com/countdown/generic?iso=20151111T20&p0=64&msg=EasyCTF+2015&font=slab&csz=1&swk=1" target="_blank"><i class="fa fa-calendar"></i> November 3 to November 11, 2015</a></h3>
+		</div>
+	</center>
+	<center style="margin-bottom:120px;">
+		<a href="#register" data-scroll class="btn btn-primary btn-lg">Register Now!</a>
+		<a href="/about" class="btn btn-success btn-lg">Learn More <i class="fa fa-arrow-right"></i></a>
+	</center>
+</div>
+<div class="container">
+	<!-- <center>
+		<h1>Time Remaining</h1>
+	</center>
+	<div class="jumbotron hidden-xs">
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<center>
+					<input type="text" class="dial" data-min="0" data-max="7" data-readOnly="true" id="clock_days">
+				</center>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<center>
+					<input type="text" class="dial" data-min="0" data-max="24" data-readOnly="true" id="clock_hrs">
+				</center>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<center>
+					<input type="text" class="dial" data-min="0" data-max="60" data-readOnly="true" id="clock_mins">
+				</center>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<center>
+					<input type="text" class="dial" data-min="0" data-max="60" data-readOnly="true" id="clock_secs">
+				</center>
+			</div>
+		</div> -->
+		<div class="page-header">
+			<h1 style="font-size:4.0em;">
+				<center>Winners</center>
+			</h1>
+			<p>
+				<h2 style="font-size:2.0em;"><center>Congratulations to teams <span style="color:#4CAF50;font-weight:bold;">µ's</span>, <span style="color:#7B1FA2;font-weight:bold;">not good at compute box</span>, and <span style="color:#4CAF50;font-weight:bold;">CatsInBags</span> for winning EasyCTF 2015! Thanks to everyone who participated! We hope you see you again next year!</center></h2>
+			</p>
+		</div>
+	
+	<div class="page-header">
+		<h2>Updates</h2>
+	</div>
+		<div id="updates_container">
+		<div id="updates">
+		<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/easyctf" data-widget-id="661431758655782912" data-chrome="nofooter" data-tweet-limit="4" data-height="600">Tweets by @easyctf</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
+		</div>
+	</div>
+	
+	<a id="register"></a>
+	<div class="page-header">
+		<h2>Register</h2>
+	</div>
+	{% include registerform.html %}
+</div>
+
+<script type="text/javascript">
+var showClock = function(diff) {
+	var day_diff = Math.floor(diff / (1000 * 60 * 60 * 24));
+	diff %= 1000 * 60 * 60 * 24;
+	$("#clock_days").val(day_diff);
+	var hour_diff = Math.floor(diff / (1000 * 60 * 60));
+	diff %= 1000 * 60 * 60;
+	$("#clock_hrs").val(hour_diff);
+	var minute_diff = Math.floor(diff / (1000 * 60));
+	diff %= 1000 * 60;
+	$("#clock_mins").val(minute_diff);
+	var second_diff = Math.floor(diff / 1000);
+	$("#clock_secs").val(second_diff);
+	$(".dial").trigger("change");
+}
+var updateClock = function() {
+	var nowTime = new Date();
+	var diff;
+	if (nowTime < startDate) {
+		diff = startDate - nowTime;
+		showClock(diff);
+		requestAnimationFrame(updateClock);
+	} else if (nowTime < endDate) {
+		diff = endDate - nowTime;
+		showClock(diff);
+		requestAnimationFrame(updateClock);
+	} else {
+
+	}
+}
+$(document).ready(function() {
+	var nowTime = new Date();
+	$(".dial").knob({
+		"bgColor": "#ecf0f1",
+		"fgColor": nowTime < startDate ? "#7B1FA2" : "#4CAF50",
+		"inputColor": "#2c3e50",
+		"skin": "tron",
+		"thickness": 0.125,
+		"font": "{{ site.font }}"
+	});
+	smoothScroll.init({
+		speed: 575,
+		easing: 'easeInOutCubic',
+		updateURL: false
+	});
+	$("#clock_days").trigger("configure", { format: function(v) { return v + "d"; } });
+	$("#clock_hrs").trigger("configure", { format: function(v) { return v + "h"; } });
+	$("#clock_mins").trigger("configure", { format: function(v) { return v + "m"; } });
+	$("#clock_secs").trigger("configure", { format: function(v) { return v + "s"; } });
+	updateClock();
+	
+	//fetch_updates(3);
+});
+</script>

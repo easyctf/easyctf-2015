@@ -1,0 +1,87 @@
+<form class="form-horizontal" action="return false;" id="register_form">
+	<fieldset>
+		<div id="register_msg"></div>
+	</fieldset>
+	<fieldset>
+		<div class="row">
+			<div class="col-md-6 form-group">
+				<label class="col-sm-3 control-label" for="name">Name</label>
+				<div class="col-sm-9">
+					<input class="form-control" type="text" required name="name" id="name" placeholder="Name" autocomplete="off" />
+				</div>
+			</div>
+			<div class="col-md-6 form-group">
+				<label class="col-sm-3 control-label" for="email">Email</label>
+				<div class="col-sm-9">
+					<input class="form-control" type="email" required name="email" id="email" placeholder="Email" autocomplete="off" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 form-group">
+				<label class="col-sm-3 control-label" for="username">Username</label>
+				<div class="col-sm-9">
+					<input class="form-control" type="text" required name="username" id="username" placeholder="Username" autocomplete="off" />
+				</div>
+			</div>
+			<div class="col-md-6 form-group">
+				<label class="col-sm-3 control-label" for="password">Password</label>
+				<div class="col-sm-9">
+					<input class="form-control" type="password" required name="password" id="password" placeholder="Password" autocomplete="off" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 form-group">
+				<label class="col-sm-3 control-label" for="type">Who are you?</label>
+				<div class="col-sm-9">
+					<select name="type" id="type" class="selectpicker" data-width="auto">
+						<option value="1">US Middle/High School Student</option>
+						<option value="2">Middle/High School Teacher</option>
+						<option value="3">Non-US/Non-Student/Observer</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-6 form-group">
+				<label class="col-sm-3 control-label" for="password">Notifications</label>
+				<div class="col-sm-9">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-default active" id="notify_btn">
+							<input type="checkbox" autocomplete="off" checked name="notify" id="notify"> <span id="notify_box" class="fa fa-check-square"></span>&nbsp;&nbsp;Get notified about future CTFs
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 form-group">
+				<label class="col-sm-3 control-label" for="type">Captcha</label>
+				<div class="col-sm-9">
+					<div class="g-recaptcha" data-sitekey="xxxxxxxxxxxxxxxxxxx" style="display:inline-block"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<center>
+				<p>
+					<input type="submit" class="btn btn-primary btn-lg" value="Register!" />
+				</p>
+			</center>
+		</div>
+	</fieldset>
+</form>
+
+<script type="text/javascript">
+	$(".selectpicker").selectpicker();
+	var checkedClass = "fa fa-check-square";
+	var uncheckedClass = "fa fa-square";
+	$("#notify_btn").click(function() {
+		if($("#notify").is(":checked")) {
+			$("#notify_box").removeClass(checkedClass);
+			$("#notify_box").addClass(uncheckedClass);
+		} else {
+			$("#notify_box").removeClass(uncheckedClass);
+			$("#notify_box").addClass(checkedClass);
+		}
+	});
+</script>

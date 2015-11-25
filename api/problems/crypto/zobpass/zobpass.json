@@ -1,0 +1,16 @@
+{
+	"pid":			"zobpass",
+	"title":		"Zob's Password",
+	"grader":		"crypto/zobpass/zobpass_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>Zob is sending his friends a password to one of his game accounts so that they can play for him. However he was using one of the organization's computers which aren't for personal use. Teach Zob a lesson by breaking his encrypted <a href='/static/problems/zobpass/zobs_password.txt' target='_blank'>password</a>.",
+	"hint":			"<p>Zob makes short passwords</p>",
+	"value":		450,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"hash1": 1,
+		"allzob": 1
+	}
+}

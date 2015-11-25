@@ -1,0 +1,17 @@
+{
+	"pid":			"49-shades",
+	"title":		"49 Shades of Gray",
+	"grader":		"forensics/49-shades/49-shades_grader.py",
+	"category":		"Forensics",
+	"description":	"We only have 49 shades of gray D: <p>#000000 to #F5F5F5... there's one shade missing! Find the hex value of the missing shade. Pound sign optional.</p><p><a href='/static/problems/49-shades/shades.png' style='max-height:200px;' target='_blank'>Image</a></p>",
+	"hint":			"<p>How can we tell which color is which?</p>",
+	"value":		125,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"apple": 1,
+		"png": 1,
+		"lolteam": 1
+	}
+}

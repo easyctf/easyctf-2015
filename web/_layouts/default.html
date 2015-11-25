@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		{% include head.html %}
+	</head>
+	<body>
+		<div id="site-message" style="margin:0"></div>
+		{% include navbar.html %}
+		<div id="main-content">
+			{{ content }}
+		</div>
+		<footer id="main-footer">
+			{% include footer.html %}
+		</footer>
+	</body>
+</html>

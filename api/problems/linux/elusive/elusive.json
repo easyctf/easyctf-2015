@@ -1,0 +1,14 @@
+{
+	"pid":			"elusive",
+	"title":		"Now You See Me, Now You Don't",
+	"grader":		"linux/elusive/elusive_grader.py",
+	"category":		"Linux",
+	"description":	"<p>Now you see me, now you don't? There's a file in <code>/problems/elusive</code>, but I can't seem to find it. Find it and print its contents!</p>",
+	"hint":			"<p>What are <abbr>hidden files</abbr> in Linux?</p>",
+	"value":		75,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{
+	}
+}

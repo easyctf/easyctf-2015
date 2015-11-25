@@ -1,0 +1,38 @@
+<div class="panel panel-default setting-panel" id="_noteam">
+	<div class="panel-heading">
+		<h2 class="panel-title">Create or Join a Team</h2>
+	</div>
+	<div class="panel-body">
+		<p>Important message for teachers: if you're looking to add your students to a class, don't use this form. Instead, use the <a href="/classroom">Classroom</a> page. This form is for teachers who would like to view the problems.</p>
+		<form class="form-horizontal" action="javascript:join_team();" onsubmit="join_team();return false;">
+			<fieldset>
+				<legend>Join a Team</legend>
+				<div id="join_msg"></div>
+				<div class="form-group">
+					<label for="join-code" class="control-label col-md-2">Join Code</label>
+					<div class="col-md-6">
+						<input type="text" name="join-code" id="join-code" class="form-control" placeholder="Join Code" />
+					</div>
+					<div class="col-md-2">
+						<input type="submit" value="Join Team!" class="btn btn-info" />
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<form class="form-horizontal" action="javascript:create_team();" onsubmit="create_team();return false;">
+			<fieldset>
+				<legend>Create a Team</legend>
+				<div id="create_msg"></div>
+				<div class="form-group">
+					<label for="create-name" class="control-label col-md-2">Team Name</label>
+					<div class="col-md-6">
+						<input type="text" name="create-name" class="form-control" id="create-name" placeholder="Team Name" />
+					</div>
+					<div class="col-md-2">
+						<input id="create-submit" type="submit" value="Create Team!" class="btn btn-info" />
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>

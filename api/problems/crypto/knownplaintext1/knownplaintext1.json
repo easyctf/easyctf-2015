@@ -1,0 +1,19 @@
+{
+	"pid": "knownplaintext1",
+	"title": "Known Plaintext 1",
+	"grader" : "crypto/knownplaintext1/knownplaintext1_grader.py",
+	"category": "Cryptography",
+	"description": "<p>Solve the problem using the programming interface. The input file is <code>knownplaintext1.in</code>.<br /><br />The input is formatted <code>[d/e] &lt;string&gt;</code>. The first character specifies whether the assignment is to encrypt or to decrypt, and the string is either the plaintext or the ciphertext, depending on the first letter.</p>",
+	"hint": "<p>Figure it out yourself ;)</p>",
+	"value": 300,
+	"bonus_points": [0,0,0],
+	"programming": true,
+	"flag": "easyctf{w0w_d4t_h3x_th0}",
+	"threshold" : 12,
+	"weightmap" : {
+		"hello-world": 1,
+		"hash1": 10,
+	    "addition": 1,
+        "can-you-even": 1
+	}
+}

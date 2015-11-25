@@ -1,0 +1,16 @@
+{
+	"pid":			"blackmesa",
+	"title":		"Black Table",
+	"grader":		"crypto/blackmesa/blackmesa_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>Good morning, and welcome to the <a href='/static/problems/blackmesa/blacktable.txt' target='_blank'>Black Table Transit System</a>. NO PLEASE SAVE US NOT KILL US</p>",
+	"hint":			"<p>Black Table really likes copying its competitor, but to appease the buzzword-loving venture capitalists, they made it seem like there was automation involved.</p>",
+	"value":		450,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"hash1": 1,
+		"allzob": 1
+	}
+}

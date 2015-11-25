@@ -1,0 +1,72 @@
+[
+	{
+		"pid": "eastereggs",
+		"title": "Easter Egg Page",
+		"egg": "egg{gotta_catch_'em_all}"
+	},
+	{
+		"pid": "1337",
+		"title": "1337",
+		"egg": "egg{9_much_h4kking}"
+	},
+	{
+		"pid": "dank_memes",
+		"title": "Dank Memes",
+		"egg": "egg{i_like_my_memes_nice_and_fresh}"
+	},
+	{
+		"pid": "404",
+		"title": "404 Page",
+		"egg": "egg{egg_not_found}"
+	},
+	{
+		"pid": "ubuntu",
+		"title": "Ubuntu",
+		"egg": "egg{ubuntus_on_ubuntus_on_ubuntus}"
+	},
+	{
+		"pid": "infinitystar",
+		"title": "Infinity Star",
+		"egg": "egg{blaze_it_4_infinity_dayz}"
+	},
+	{
+		"pid": "banner",
+		"title": "Homepage Detective",
+		"egg": "egg{u_sneaky_little_creeep}"
+	},
+	{
+		"pid": "rules",
+		"title": "Egg Format",
+		"egg": "egg{lol_why_are_you_checkig_the_source_on_the_rules_page}"
+	},
+	{
+		"pid": "st4lker",
+		"title": "st4lker",
+		"egg": "egg{lel_st4lk3r_much}"
+	},
+	{
+		"pid": "helpfulegg1",
+		"title": "Thanks for not screwing up",
+		"egg": "egg{3d5e1206c06bd56638e0b69929e28e94}"
+	},
+	{
+		"pid": "helpfulegg2",
+		"title": "Thanks for not screwing up (again)",
+		"egg": "egg{ad05d4504e496fcfa91a2851ca9cdccb}"
+	},
+	{
+		"pid": "helpfulegg3",
+		"title": "Thanks for being a good citizen!",
+		"egg": "egg{708b3f752bb5143358d00db8e4343291}"
+	},
+	{
+		"pid": "myface",
+		"title": "I'm sure you loved Val's face!!",
+		"egg": "egg{I_<3_easter_eggs!}"
+	},
+	{
+		"pid": "overachiever",
+		"title": "A+ 100% good job :)",
+		"egg": "egg{l3l_y0u_0v3r4ch13v3r}"
+	}
+]

@@ -1,0 +1,19 @@
+{
+	"pid":			"string-change",
+	"title":		"String Change",
+	"grader":		"programming/string-change/string-change_grader.py",
+	"category":		"Programming",
+	"description":	"<p>Use the programming interface to complete this task. Given an array of 5 numbers, change every nth character, with n being the value of the first number of the array and the first letter of the string as the 1st character, of a string and move its value up by one (a turns into b, z turns into a). Repeat this for the rest of the numbers of the array and return the changed string. Do this for all the strings. Be careful to keep the original capitalization!</p> <p>For example: <code>[2,3,7,5,4]</code> and <code>oTerNmIWxGqaaV</code> would become <code>oUftOoJYyIqdaX</code></p><p>ID: <code>string-change</code><br /> Input: Read the input from a file called <code>string-change.in</code> that contains a string of: a list of 5 numbers separated by commas followed by a linebreak, and then a string of random characters.<br /> Output: The string changed according to the values in the list, written to a file called <code>string-change.out</code>.</p> <p>You already know this, but don&#39;t forget to end your output with a newline.</p>",
+	"hint":			"<p>First, look into string splitting, and the <code>ord()</code> and <code>chr()</code> functions!</p>",
+	"value":		70,
+	"bonus_points":	[0, 0, 0],
+	"programming":	true,
+	"flag":			"easyctf{changing_things_up_once_in_a_while_is_gooood_for_you}",
+	"threshold":	2,
+	"weightmap":	{
+		"addition": 1,
+		"can-you-even": 1,
+		"math-class": 1,
+		"easyctf-day": 1
+	}
+}

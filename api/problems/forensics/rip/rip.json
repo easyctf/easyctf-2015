@@ -1,0 +1,17 @@
+{
+	"pid":			"rip",
+	"title":		"Rest in Pepperoni-Pizzas",
+	"grader":		"forensics/rip/rip_grader.py",
+	"category":		"Forensics",
+	"description":	"<p>I gave my little sister a flag, but she cut it up and hid the pieces! Retrieve it here: <a href='/static/problems/rip/ripinpizzas.pdf' target='_blank'>ripinpizzas.pdf</a>.</p>",
+	"hint":			"<p>Have fun! If you do it by the paper-and-scissors method, share it to <a href='http://twitter.com/easyctf' target='_blank'>@easyctf</a>!</p>",
+	"value":		100,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"apple": 1,
+		"png": 1,
+		"lolteam": 1
+	}
+}

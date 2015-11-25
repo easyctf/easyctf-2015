@@ -1,0 +1,15 @@
+{
+	"pid":			"xor",
+	"title":		"XOR",
+	"grader":		"crypto/xor/xor_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>This string has been encrypted using XOR!</p><p><code>message = \" $6<&1#><*\\x1a!$2\\x22\\x1a,\\x1a- $7!\\x1a<*0\\x1a),. !\\x1a=*78\"</code></p>",
+	"hint":			"<p>What could the key be? Here's a hint: it was encrypted 3 times.</p>",
+	"value":		150,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"caesar": 1
+	}
+}

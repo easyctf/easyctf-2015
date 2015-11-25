@@ -1,0 +1,16 @@
+{
+	"pid":			"biggerisbetter",
+	"title":		"Bigger is Better",
+	"grader":		"crypto/biggerisbetter/biggerisbetter_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>The larger the primes, the stronger the RSA cryptosystem is, right?</p><p><a href='/static/problems/biggerisbetter/biggerisbetter.txt' target='_blank'>Data</a>.</p>",
+	"hint":			"Nope ;)",
+	"value":		500,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"hash1": 1,
+		"allzob": 1
+	}
+}

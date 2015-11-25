@@ -1,0 +1,1 @@
+sudo mongoexport --db easyctf --collection problems --csv --fields pid,title,value,category -o /srv/http/ctf/problems.csv

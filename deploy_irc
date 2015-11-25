@@ -1,0 +1,15 @@
+BASEDIR="/home/easyctf/easyctf"
+IRCDIR="/home/easyctf/heichat"
+JAILDIR="/var/jail/heichat"
+
+cd $BASEDIR
+git reset --hard > /dev/null
+git pull origin master -f > /dev/null
+
+echo "Grabbing latest updates..."
+cd $IRCDIR
+git reset --hard > /dev/null
+git pull origin master -f > /dev/null
+sudo cp motd.txt $JAILDIR/motd.txt
+tmux kill-session -t ircapi 2> /dev/null
+tmux new-session -s ircapi -d "cd $IRCDIR && sudo python heichat.py --logdir=/log --statedir=/state --motd=/motd.txt --setuid root --chroot=/var/jail/heichat"

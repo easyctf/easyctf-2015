@@ -1,0 +1,17 @@
+{
+	"pid":			"ispy",
+	"title":		"iSpy",
+	"grader":		"forensics/ispy/ispy_grader.py",
+	"category":		"Forensics",
+	"description":	"<p>We intercepted some suspicious network activity. We think that the enemy has been exchanging important data. Can you help us figure out what it is? You can find a copy of the file <a href=\"/static/problems/ispy/ispy.pcapng\" target=\"_blank\">here</a></p>",
+	"hint":			"<p>You're going to need to be able to open that file. Something like <a href=\"https://www.wireshark.org/\" target=\"_blank\">Wireshark</a> might help.</p>",
+	"value":		120,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"1000words": 1,
+		"49-shades": 1,
+		"rip": 1
+	}
+}

@@ -1,0 +1,47 @@
+---
+layout: default
+indexing: false
+title: Account
+scripts:
+- /js/account.js
+- /js/updates.js
+- /vendor/js/typeahead.js
+- //cdn.ckeditor.com/4.5.4/standard/ckeditor.js
+---
+
+<style>
+	#panels .setting-panel {
+		display: none;
+	}
+</style>
+
+<div class="page-header page-header-top page-header-warning">
+	<div class="container">
+		<h1>Account Settings</h1>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3 col-xs-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2 class="panel-title">Your Profile</h2>
+				</div>
+				<div class="panel-body">
+					<img src="//www.gravatar.com/avatar/?size=512" id="avatar" style="max-width:100%;" />
+					<small style="display:block;text-align:right;"><a href="http://en.gravatar.com/emails/" target="_blank">Edit Picture</a></small>
+					<h2 id="name" style="margin:0px;font-weight:bold;"></h2>
+					<h3 id="type" style="margin:0px;"></h3>
+					<p><a style="color:#666;" id="email_container"><span class="fa fa-envelope"></span>&nbsp;<span id="email"></span></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-9 col-xs-12" id="panels">
+			{% include account/updates.html %}
+			{% include account/groups.html %}
+			{% include account/team.html %}
+			{% include account/noteam.html %}
+			{% include account/settings.html %}
+		</div>
+	</div>
+</div>

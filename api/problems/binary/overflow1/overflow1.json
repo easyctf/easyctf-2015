@@ -1,0 +1,16 @@
+{
+	"pid":			"overflow1",
+	"title":		"Buffering . . .",
+	"grader":		"binary/overflow1/overflow1_grader.py",
+	"category":		"Binary Exploitation",
+	"description":	"<p>Can you overflow the stack? Try it at <code>/problems/overflow1</code> on the EasyCTF shell server. The source is available at <code>/problems/overflow1/overflow1.c</code>, and the program you're trying to overflow is at <code>/problems/overflow1/overflow1</code>. Good luck!</p>",
+	"hint":			"<p>Read a little bit about the stack <a href='https://www.exploit-db.com/docs/28475.pdf' target='_blank'>here</a>.</p>",
+	"value":		80,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"owner": 1,
+		"elusive": 1
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"pid":			"caesar",
+	"title":		"Julius Save Me",
+	"grader":		"crypto/caesar/caesar_grader.py",
+	"category":		"Cryptography",
+	"description":	"<p>This cipher involves shifty letters! <code>Cnebnl Vtxltk bl max uxlm unm fr ykbxgw ebdxl Gtihexhg uxmmxk yhk patmxoxk kxtlhg. Ha pxee. Max yetz bl xtlrvmy{Gti0exhg_ol_Vt3l4k}</code></p>",
+	"hint":			"<p>You might want to read up on <a href=\"http://en.wikipedia.org/wiki/Caesar_cipher\" target=\"_blank\">Caesar ciphers</a>.</p>",
+	"value":		20,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{}
+}

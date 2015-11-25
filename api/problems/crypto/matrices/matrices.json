@@ -1,0 +1,16 @@
+{
+	"pid": "matrices", 
+	"title": "Matrices", 
+	"grader" : "crypto/matrices/matrices_grader.py",
+	"category": "Cryptography", 
+	"description": "<p> Looks like Zob tried to make his own encryption algorithm again; <a href='/static/problems/matrices/matrix.java'>here's</a> the program. <a href='/static/problems/matrices/message1'>Here</a>, <a href='/static/problems/matrices/output1'>here</a>, and <a href='/static/problems/matrices/output2'>here</a> are two messages encrypted with the same key and the plaintext of one of the messages. Convince Zob to stop trying to make his own ciphers!</p>",
+	"hint": "<p>Technically, all the math you need for this problem you learned in Algebra 2.</p>", 
+	"value": 575, 
+	"bonus_points": [0,0,0], 
+	"programming": false, 
+	"threshold" : 1,
+	"weightmap" : {
+		"hash1": 1,
+		"allzob": 1
+	}
+}

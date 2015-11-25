@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#7B1FA2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+{% if page.indexing == false %}<meta name="robots" content="noindex">{% endif %}
+
+<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<link rel="stylesheet" href="/css/main.css" />
+{% for style in page.styles %}
+	<link rel="stylesheet" href="{{ style }}" />
+{% endfor %}
+
+<link rel="icon" href="/images/logo.ico" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" integrity="sha384-fj9YEHKNa/e0CNquG4NcocjoyMATYo1k2Ff5wGB42C/9AwOlJjDoySPtNJalccfI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" integrity="sha384-vIp38BeRN82wlvPB8/vo/5e0J1/gn7WfUf1Qq9bdh79iMPxjry99thNkscQG1b8C" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" integrity="sha384-VI5+XuguQ/l3kUhh4knz7Hxptx47wpQbVRDnp8v7Vvuhzwn1PEYb/uvtH6KLxv6d" crossorigin="anonymous"></script>
+
+<script src="/js/easyctf.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" integrity="sha384-FZY+KSLVXVyc1qAlqH9oCx1JEOlQh6iXfw3o2n3Iy32qGjXmUPWT9I0Z9e9wxYe3" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha384-tSi+YsgNwyohDGfW/VhY51IK3RKAPYDcj1sNXJ16oRAyDP++K0NCzSCUW78EMFmf" crossorigin="anonymous"></script>
+
+{% for script in page.scripts %}
+	<script src="{{ script }}"></script>
+{% endfor %}

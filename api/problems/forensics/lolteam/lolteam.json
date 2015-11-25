@@ -1,0 +1,13 @@
+{
+	"pid":			"lolteam",
+	"title":		"lolteam",
+	"grader":		"forensics/lolteam/lolteam_grader.py",
+	"category":		"Forensics",
+	"description":	"<p>There's a suspicious team out there called <b>lolteam</b>, I got my eyes on them for a while and I managed to <a href='/static/problems/lolteam/lolteam.pcapng' target='_blank'>wiretap</a> their browser as they were changing their password. What did they change their password to?</p>",
+	"hint":			"Don't know how to open <a href='http://fileinfo.com/extension/pcapng' target='_blank'>.pcapng</a> files?",
+	"value":		65,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{}
+}

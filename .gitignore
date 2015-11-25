@@ -1,0 +1,10 @@
+.c9/
+web/_site
+web/js/*.js
+*.pyc
+node_modules
+__pycache__
+tmp
+program
+db_setup.sh
+*.idea

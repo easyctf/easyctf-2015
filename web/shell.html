@@ -1,0 +1,39 @@
+---
+layout: default
+indexing: false
+title: Shell
+scripts:
+- /js/shell.js
+---
+
+<div class="page-header page-header-top page-header-danger">
+	<div class="container">
+		<h1>Shell</h1>
+	</div>
+</div>
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<table style="width: 100%;">
+				<tr>
+					<td>
+						<span id="credentials"><a href="javascript:retrieve_credentials();" class="btn btn-info" onclick="retrieve_credentials();return false;">Reveal Credentials</a></span>
+					</td>
+					<td style="text-align: right;">
+						<a href="https://shell.easyctf.com" target="_blank" class="btn btn-info">Full Screen</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<div class="jumbotron">
+		<center>
+			<iframe src="https://shell.easyctf.com" width="840" height="480" style="border:1px solid #999;"></iframe>
+		</center>
+	</div>
+	
+	<h3>What's this?</h3>
+	
+	<p>This allows you to use a full Linux system in the browser. More specifically, the shell server runs Ubuntu 14.04.</p>
+</div>

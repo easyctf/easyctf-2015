@@ -1,0 +1,13 @@
+{
+	"pid":			"easyctf-day",
+	"title":		"EasyCTF Day",
+	"grader":		"programming/easyctf-day/easyctf-day_grader.py",
+	"category":		"Programming",
+	"description":	"<p>EasyCTF started on November 3rd, 2015 this year. Find the position where the numerical representation of the month and day of this date <code>1103</code> is first found within pi. Use any language you'd like! The flag is the position of the first digit of the date within pi, where 3 is the first digit and the decimal point <code>.</code> is not considered a position.</p>",
+	"hint":			"<p>First you have to find a way to generate some digits of pi.</p>",
+	"value":		55,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{}
+}

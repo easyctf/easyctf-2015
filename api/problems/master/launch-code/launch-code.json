@@ -1,0 +1,24 @@
+{
+	"pid":			"launch-code",
+	"title":		"Launch Code",
+	"grader":		"master/launch-code/launch-code_grader.py",
+	"category":		"Master Challenge",
+	"description":	"<p><p>Recently the NSA has intercepted a program which generates the launch codes for Chinese nuclear weapons.<br /> The launch code generator program takes in a password which is at most 63 characters, and the NSA has also intercepted a password belonging to an agent identified as &quot;Agent 23102&quot;.&nbsp;Unfortunately, each launch code generator program is locked to a specific agent id, and each agent has a unique password.&nbsp;The program generates the correct launch code based on a combination of the agent id watermarked to the program and the correct password.</p> <p>Our intel suggests that the program we have intercepted belongs to an agent with the id 5068, and the password we have intercepted belongs to an agent with the id of 23102.</p> <p><strong>Your task:</strong><br /> Reverse engineer the launch code generator program, and modify it so that it will work with agent 23102&#39;s password instead of agent 5068.&nbsp;Then, using the intercepted password, generate a valid launch code and report it back to us!</p> <p><strong>Intercepted Program:</strong>&nbsp;<a href=\"/static/problems/launch-code/LaunchCode.exe\" target=\"_blank\">LaunchCode.exe</a> <small>MD5: bd1f54a4fa1f19168303275d6d02ca0f</small></p> <p><strong>Agent 23102&#39;s Passcode:</strong> diguo zhuyi hai cunzai</p>",
+	"hint":			"<p>Hint: it's not Feynman.</p>",
+	"value":		650,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	5,
+	"weightmap":	{
+		"php3": 1,
+		"faster-math": 1,
+		"biggerisbetter": 1,
+		"cave-johnson": 1,
+		"blackmesa": 1,
+		"rsa3": 1,
+		"yandere": 1,
+		"rsi": 1,
+		"adoughbee": 1,
+		"infinity_star": 1
+	}
+}

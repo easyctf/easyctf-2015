@@ -1,0 +1,17 @@
+{
+	"pid":			"easter",
+	"title":		"Easter",
+	"grader":		"web/easter/easter_grader.py",
+	"category":		"Web",
+	"description":	"<p><a href = '/static/problems/easter/easter.html' target='_blank'>page</a></p>",
+	"hint":			"<p>Just look around.</p>",
+	"value":		100,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"php1": 1,
+		"ssl1": 1,
+		"wastebin-2": 1
+	}
+}

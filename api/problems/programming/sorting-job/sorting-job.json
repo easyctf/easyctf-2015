@@ -1,0 +1,19 @@
+{
+	"pid":			"sorting-job",
+	"title":		"Sort-of Easy",
+	"grader":		"programming/sorting-job/sorting-job_grader.py",
+	"category":		"Programming",
+	"description":	"<p>Use the programming interface to complete this task. </p> <p>Input: A list of numbers, separated by commas. Ex: <code>3,28,9,17,5</code><br />Output: The list sorted from largest to smallest, separated by commas. Ex: <code>28,17,9,5,3</code></p> <p>Read the input from a file called&nbsp;<code>sorting-job.in</code>&nbsp;that&#39;s in the current working directory, and then write your output to a file called&nbsp;<code>sorting-job.out</code>.</p>",
+	"hint":			"<p>I wonder if there is a handy sort function for this? </p>",
+	"value":		50,
+	"bonus_points":	[0, 0, 0],
+	"programming":	true,
+	"flag":			"easyctf{sorting_is_as_easy_as_3_2_1!}",
+	"threshold":	3,
+	"weightmap":	{
+		"looking-for-letters": 1,
+		"piglatin1": 1,
+		"piglatin2": 1,
+		"string-change": 1
+	}
+}

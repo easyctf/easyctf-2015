@@ -1,0 +1,64 @@
+server {
+	listen 80;
+	server_name web.easyctf.com;
+	return 403;
+}
+
+server {
+	listen 80;
+	server_name easyctf.com;
+	return 301 https://www.$server_name$request_uri;
+}
+
+server {
+	listen         80;
+	server_name    www.easyctf.com;
+	return         301 https://$server_name$request_uri;
+}
+
+server {
+	server_name www.easyctf.com beta.easyctf.com;
+	listen 443 ssl;
+	ssl_certificate /etc/nginx/ssl/easyctf.crt;
+	ssl_certificate_key /etc/nginx/ssl/easyctf.key;
+	root /srv/http/ctf;
+
+	error_page 404  =  /errors/404.html;
+	error_page 500  =  /errors/500.html;
+
+	location = / {
+		default_type text/html;
+		index  index.html;
+	}
+
+	location ~^/(about|account|chat|classroom|forgot_password|login|logout|problems|programming|register|reset_password|rules|scoreboard|shell|team|theme|updates|user)$ {
+		default_type text/html;
+		alias /srv/http/ctf/$1.html;
+	}
+
+	location ~ /static/problems/(.*)/.*.html {
+		default_type text/html;
+		add_header Content-disposition "";
+	}
+
+	location ~ ^/static/problems/(.*)/(.*) {
+		default_type application/octet-stream;
+		add_header Content-disposition "attachment; filename=$2";
+	}
+
+	location ~ /api/ {
+		proxy_set_header Host $host;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_pass http://localhost:8000;
+		proxy_redirect off;
+	}
+
+	location ~ /ubuntu {
+		proxy_set_header Host $host;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_pass http://localhost:8001;
+		proxy_redirect off;
+	}
+}

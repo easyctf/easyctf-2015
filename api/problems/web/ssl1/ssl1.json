@@ -1,0 +1,18 @@
+{
+	"pid":			"ssl1",
+	"title":		"Super Secure Lemons",
+	"grader":		"web/ssl1/ssl1_grader.py",
+	"category":		"Web",
+	"description":	"<p>This <a href='https://web.easyctf.com:10202' target='_blank'>site</a> uses an encryption technology to keep its lemons super secure! On second thought, it might not be as secure as we thought.</p>",
+	"hint":			"<p>Why is your browser giving you that funny security message?</p>",
+	"value":		225,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"intro-js": 1,
+		"plot-twist": 1,
+		"wastebin-1": 1,
+		"fandoms": 1
+	}
+}

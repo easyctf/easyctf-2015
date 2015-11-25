@@ -1,0 +1,13 @@
+{
+	"pid":			"survey",
+	"title":		"Survey",
+	"grader":		"misc/survey/survey_grader.py",
+	"category":		"Miscellaneous",
+	"description":	"<p>Congrats for making it this far! We've got a <a href='http://goo.gl/forms/aXbKvHlYJN' target='_blank'>survey</a> for you, that's worth free points! Please try to get all the members of your team to fill it out, but only submit it once :) Thanks for playing EasyCTF!</p><p>Note: although this counts for points, it will not affect the time of your submissions. You won't be able to pass another team just by solving the survey before them.</p>",
+	"hint":			"<p>Don't worry, there's no strings attached!</p>",
+	"value":		15,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{ } 
+}

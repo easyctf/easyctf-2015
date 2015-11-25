@@ -1,0 +1,16 @@
+{
+	"pid":			"obfuscated",
+	"title":		"Obfuscated",
+	"grader":		"programming/obfuscated/obfuscated_grader.py",
+	"category":		"Programming",
+	"description":	"<p>How good are you at reading Python? Put your Python skills to the test by finding the password that passes this check: <a href='/static/problems/obfuscated/obfuscated.py' target='_blank'>obfuscated.py</a></p><p>Note: <code>easyctf{}</code> formatting is not required for this problem.",
+	"hint":			"<p>Note: there may be multiple correct answers. The grader runs the same code that's in the given file.</p>",
+	"value":		400,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"sorting-job": 1,
+		"if-logic": 1
+	}
+}

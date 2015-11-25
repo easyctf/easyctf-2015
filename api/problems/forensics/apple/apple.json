@@ -1,0 +1,13 @@
+{
+	"pid":			"apple",
+	"title":		"An apple a day keeps the dinosaur away?",
+	"grader":		"forensics/apple/apple_grader.py",
+	"category":		"Forensics",
+	"description":	"<p>Oh look, it's a perfectly innocent picture of an <a href=\"/static/problems/apple/apple.jpg\" target=\"_blank\">apple</a>. Nothing to see here!</p>",
+	"hint":			"Apples are suspicious. Don't trust apples. They always have something to hide . . .",
+	"value":		35,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{}
+}

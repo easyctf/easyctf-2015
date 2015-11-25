@@ -1,0 +1,14 @@
+Flask
+Jinja2
+py3k-bcrypt
+pymongo
+pyzmq
+pytest
+voluptuous
+gunicorn
+spur
+line_profiler
+requests
+moment
+mailchimp
+sendgrid

@@ -1,0 +1,19 @@
+{
+	"pid":			"piglatin1",
+	"title":		"Oink",
+	"grader":		"programming/piglatin1/piglatin1_grader.py",
+	"category":		"Programming",
+	"description":	"<p>Use the programming interface to solve this problem.</p> <p>Pig Latin is a &quot;secret&quot; language in which English words are changed to sound foreign. Its rules are pretty simple:</p> <ul> <li>If the English word begins with a vowel, add &quot;yay&quot; to the end.</li> <li>If the English word begins with a consonant, move the first letter to the end and then add &quot;ay&quot;.</li> </ul> <p>For example, &quot;Apples are Delicious&quot; becomes &quot;Applesyay areyay eliciousDay&quot;. Note: if you know a version of Pig Latin that uses a variation of rules different from the above rules, please use the above rules for this problem.</p> <p>Your job is to translate English input to Pig Latin output. For this exercise, keep capitalized letters capitalized, even when they are moved.</p> <p>ID: <code>piglatin1</code><br /> Input: A sentence in English.<br /> Output: The translation in Pig Latin.</p> <p>Read the input from a file called&nbsp;<code>piglatin1.in</code>&nbsp;that&#39;s in the current working directory, and then write your output to a file called&nbsp;<code>piglatin1.out</code></p>",
+	"hint":			"Words are defined as separated by spaces. :)",
+	"value":		85,
+	"bonus_points":	[0, 0, 0],
+	"programming":	true,
+	"flag":			"easyctf{atinl4y_easyyay_3noughyay_orfay_ayay_1gpay!}",
+	"threshold":	2,
+	"weightmap":	{
+		"addition": 1,
+		"can-you-even": 1,
+		"math-class": 1,
+		"easyctf-day": 1
+	}
+}

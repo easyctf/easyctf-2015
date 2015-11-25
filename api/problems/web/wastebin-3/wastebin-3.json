@@ -1,0 +1,16 @@
+{
+	"pid":			"wastebin-3",
+	"title":		"Wastebin 3",
+	"grader":		"web/wastebin-3/wastebin-3_grader.py",
+	"category":		"Web",
+	"description":	"<p>Hey I just learned this thing called MySQL! My <code>admin</code> account should be safe now! <a href='http://web.easyctf.com:10207/3/' target='_blank'>Link</a></p>",
+	"hint":			"<p>What is <a href='http://www.w3schools.com/sql/' target='_blank'>SQL</a>?</p>",
+	"value":		325,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"easter": 1,
+		"php2": 1
+	}
+}

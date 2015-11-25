@@ -1,0 +1,15 @@
+{
+	"pid": "rsa3", 
+	"title": "Respiratory Sinus Arrhythmia", 
+	"grader" : "crypto/rsa3/rsa3_grader.py",
+	"category": "Cryptography", 
+	"description": "<p>Zob is stupid and modified his RSA program <a href='/static/problems/rsa3/rsa3.java'>here</a>. He left after we fired him after the mess we had with his bad matrix cipher, but he kept the server password encrypted with this program (we put it in the program for you). Can you help us recover the password?</p>",
+	"hint": "<p>Fractions :D</p>", 
+	"value": 550, 
+	"bonus_points": [0,0,0], 
+	"programming": false, 
+	"threshold" : 1,
+	"weightmap" : {
+		"zobpass": 1
+	}
+}

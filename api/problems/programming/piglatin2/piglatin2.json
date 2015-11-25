@@ -1,0 +1,19 @@
+{
+	"pid":			"piglatin2",
+	"title":		"Oink Oink",
+	"grader":		"programming/piglatin2/piglatin2_grader.py",
+	"category":		"Programming",
+	"description":	"<p>Use the programming interface to solve this problem.</p> <p>Now that we know how to convert from English to&nbsp;Pig Latin, can we reverse the translation? Given a sentence in Pig Latin, reverse it and try to find the original English text.</p> <p>Be careful to note that if a Pig Latin word is capitalized, like &quot;Arispay&quot;, the original English word is &quot;Paris&quot; rather than &quot;pAris&quot;. Case counts!</p> <p>ID: <code>piglatin2</code><br /> Input: A sentence in Pig Latin.<br /> Output: The translation in English.</p> <p>Read the input from a file called&nbsp;<code>piglatin2.in</code>&nbsp;that&#39;s in the current working directory, and then write your output to a file called&nbsp;<code>piglatin2.out</code></p>",
+	"hint":			"Work backwards! You'll probably need the <code>chr()</code> and <code>ord()</code> functions! Also, string splicing is pretty cool in Python ;)",
+	"value":		115,
+	"bonus_points":	[0, 0, 0],
+	"programming":	true,
+	"flag":			"easyctf{th0se_pesky_capit4ls_were_a_pa1n,_weren't_they?}",
+	"threshold":	2,
+	"weightmap":	{
+		"addition": 1,
+		"can-you-even": 1,
+		"math-class": 1,
+		"easyctf-day": 1
+	}
+}

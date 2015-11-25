@@ -1,0 +1,14 @@
+{
+	"pid":			"owner",
+	"title":		"Mrrow?????",
+	"grader":		"linux/owner/owner_grader.py",
+	"category":		"Linux",
+	"description":	"<p>A lonely little text file wants to play a game: <code>/problems/owner</code>.</p>",
+	"hint":			"<p>Google is always your friend.</p>",
+	"value":		75,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	0,
+	"weightmap":	{
+	}
+}

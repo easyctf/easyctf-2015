@@ -1,0 +1,12 @@
+BASEDIR="/home/easyctf/easyctf"
+cd $BASEDIR
+
+echo "Grabbing latest updates..."
+git reset --hard
+git pull origin master -f
+
+echo "Starting extras..."
+chmod +x extras/init.sh
+./extras/init.sh
+
+chmod +x deploy_extras

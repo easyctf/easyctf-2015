@@ -1,0 +1,17 @@
+{
+	"pid":			"1000words",
+	"title":		"A Picture is Worth a Thousand Words",
+	"grader":		"forensics/1000words/1000words_grader.py",
+	"category":		"Forensics",
+	"description":	"<p>A picture is worth a thousand words. Can you find the (JPEG) picture among a thousand files? Connect to the EasyCTF SSH server and find the files in <code>/problems/1000words</code>. The files are also available for download <a href='/static/problems/1000words/data.zip'>here</a>.</p>",
+	"hint":			"<p>Grep is always your friend.</p>",
+	"value":		100,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	2,
+	"weightmap":	{
+		"apple": 1,
+		"png": 1,
+		"lolteam": 1
+	}
+}

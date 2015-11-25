@@ -1,0 +1,16 @@
+{
+	"pid":			"same-difference",
+	"title":		"Same Difference",
+	"grader":		"linux/same-difference/same-difference_grader.py",
+	"category":		"Linux",
+	"description":	"<p><em>Solve this problem by connecting to the EasyCTF shell, either in your browser or through some other TTY.</em></p> <p>We've noticed that a list of passwords has been modified. Compare the original <code>master_copy.txt</code> to the <code>suspicious.txt</code> and tell us what the password was changed to! The files are on the shell server at <code>/problems/same_difference</code>.</p> <p>This can be solved only with the tools available in the shell. No scripting languages are required.</p>",
+	"hint":			"<p>There's a pretty cool Linux command called <code>diff</code> that might be useful for you.</p>",
+	"value":		125,
+	"bonus_points":	[0, 0, 0],
+	"programming":	false,
+	"threshold":	1,
+	"weightmap":	{
+		"owner": 1,
+		"elusive": 1
+	}
+}

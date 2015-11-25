@@ -1,0 +1,13 @@
+<% include _includes/header.ejs %>
+
+<div class="container">
+	<% if (page.logged_in) { %>
+		<script type="text/javascript">
+			location.href = "/";
+		</script>
+	<% } else { %>
+		<% include _includes/registerform %>
+	<% } %>
+</div>
+
+<% include _includes/footer.ejs %>
