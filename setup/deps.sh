@@ -5,26 +5,9 @@ apt-get -y update
 apt-get -y upgrade
 
 # CTF-Platform Dependencies
-apt-get -y install python3-pip
-apt-get -y install nginx
-apt-get -y install mongodb
-apt-get -y install gunicorn
-apt-get -y install git
-apt-get -y install libzmq-dev
-apt-get -y install nodejs-legacy
-apt-get -y install npm
-apt-get -y install libclosure-compiler-java
-apt-get -y install ruby-dev
-apt-get -y install dos2unix
-apt-get -y install tmux
-apt-get -y install openjdk-7-jdk
+apt-get -y install python3-pip nginx mongodb gunicorn git libzmq-dev nodejs-legacy npm libclosure-compiler-java ruby-dev dos2unix tmux openjdk-7-jdk
 
-npm install -g coffee-script
-npm install -g coffeebar
-npm install -g react-tools
-npm install -g jsxhint
-npm install -g jsonlint
-npm install -g lessc
+npm install -g coffee-script coffeebar react-tools jsxhint jsonlint less
 
 pip3 install -r api/requirements.txt
 
