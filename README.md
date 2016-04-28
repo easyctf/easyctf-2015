@@ -15,21 +15,7 @@ I removed the important keys and secrets, and tried to generalize some parts of 
 Installation
 ------
 
-- First, obtain a server that runs Ubuntu, install git, and pull this repo to your computer.
-- Note: most of the scripts and stuff should be run from the root directory of the project.
-- Install all other dependencies by running the `setup/deps.sh`. Ex: `sh setup/deps.sh`
-- Prepare the MongoDB database by running the `setup/mongo.js`. Ex: `mongo easyctf setup/mongo.js`
-- Run `deploy` to start the server. Ex: `deploy` (you'll probably want to `. /etc/profile` to have the directory added to your path)
-- If you are using a VPS, verify that port 443 (HTTPS) is open. The site should be working now.
-
-Loading Problems
-------
-
-- Create your problems inside `/api/problems`. Make sure the directory format is `category/problem_name`
-- Inside the `category/problem_name` directory, add `problem_name.json`
-- In the same folder, create your grader script. To get the right path, follow the example
-- In the same folder, use a `static` folder to contain static files
-- Once you're done putting your problems there, run `api/load_problems.py` to copy the problems to the db
+Please use [OpenCTF](https://github.com/EasyCTF/OpenCTF). This repository will be left up for historical purposes.  
 
 Problem-Writing Guidelines
 ------
